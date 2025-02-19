@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 import SearchIcon from '@mui/icons-material/Search';
 import PhoneIcon from '@mui/icons-material/Phone';
 import HomeIcon from '@mui/icons-material/Home';
-//Arun
+
+// pransesh
 const categories = [
   {
     name: "Kitchen Equipment",
@@ -19,6 +20,8 @@ const categories = [
     name: "Bakery Equipment",
     items: ["Deep Fryer", "Donut Fryer", "Pressure Fryer","Oven"],
   },
+  // Nanum  irkeran 
+  //okay fine
   {
     name: "Chicken Barbecue Machine",
     items: ["Grill Chicken Machine", "Shawarma Machine", "Alfaham Machine", "Barbeque Machine"],
