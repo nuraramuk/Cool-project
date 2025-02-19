@@ -14,6 +14,7 @@ const categories = [
     name: "Food Preparation",
     items: ["Idli Steamer", "Dhokla Steamer", "Commercial Food Steamer", "Milk Steamer", "Machines"],
   },
+  //mmm
   {
     name: "Bakery Equipment",
     items: ["Deep Fryer", "Donut Fryer", "Pressure Fryer","Oven"],
