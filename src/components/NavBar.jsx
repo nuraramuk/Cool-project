@@ -20,7 +20,8 @@ const categories = [
     name: "Bakery Equipment",
     items: ["Deep Fryer", "Donut Fryer", "Pressure Fryer","Oven"],
   },
-  // Nanum  irkeran
+  // Nanum  irkeran 
+  //okay fine
   {
     name: "Chicken Barbecue Machine",
     items: ["Grill Chicken Machine", "Shawarma Machine", "Alfaham Machine", "Barbeque Machine"],
