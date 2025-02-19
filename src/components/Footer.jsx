@@ -54,36 +54,39 @@ const Footer = () => {
             <Typography variant="body2" sx={{ marginBottom: 1 }}>
               Subscribe to our newsletter to stay updated with our latest products.
             </Typography>
-            <input
-              type="email"
-              placeholder="Enter your email"
-              style={{
-                padding: '8px 10px',
-                width: '100%',
-                borderRadius: '5px',
-                border: '1px solid #ccc',
-                marginBottom: '10px',
-                fontSize: '14px',
-              }}
-            />
-            <button
-              style={{
-                backgroundColor: '#004e92',
-                color: 'white',
-                border: 'none',
-                padding: '8px 16px',
-                borderRadius: '5px',
-                cursor: 'pointer',
-                width: '100%',
-                fontSize: '14px',
-                transition: 'background-color 0.3s',
-              }}
-              onMouseOver={(e) => e.target.style.backgroundColor = '#003e76'}
-              onMouseOut={(e) => e.target.style.backgroundColor = '#004e92'}
-            >
-              Subscribe
-            </button>
+            <Box sx={{ width: "100%", display: "flex", flexDirection: "column", gap: 1 }}>
+              <input
+                type="email"
+                placeholder="Enter your email"
+                style={{
+                  padding: "8px 10px",
+                  width: "100%", // Ensure it does not exceed container
+                  boxSizing: "border-box", // Prevents overflow due to padding
+                  borderRadius: "5px",
+                  border: "1px solid #ccc",
+                  fontSize: "14px",
+                }}
+              />
+              <button
+                style={{
+                  backgroundColor: "#004e92",
+                  color: "white",
+                  border: "none",
+                  padding: "8px 16px",
+                  borderRadius: "5px",
+                  cursor: "pointer",
+                  width: "100%", // Matches input width
+                  fontSize: "14px",
+                  transition: "background-color 0.3s",
+                }}
+                onMouseOver={(e) => (e.target.style.backgroundColor = "#003e76")}
+                onMouseOut={(e) => (e.target.style.backgroundColor = "#004e92")}
+              >
+                Subscribe
+              </button>
+            </Box>
           </Grid>
+
         </Grid>
 
         {/* Copyright */}
