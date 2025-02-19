@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 import SearchIcon from '@mui/icons-material/Search';
 import PhoneIcon from '@mui/icons-material/Phone';
 import HomeIcon from '@mui/icons-material/Home';
-// pranesh
+
+// pransesh
 const categories = [
   {
     name: "Kitchen Equipment",
