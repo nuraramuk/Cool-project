@@ -5,7 +5,6 @@ import SearchIcon from '@mui/icons-material/Search';
 import PhoneIcon from '@mui/icons-material/Phone';
 import HomeIcon from '@mui/icons-material/Home';
 
-// pransesh
 const categories = [
   {
     name: "Kitchen Equipment",
@@ -15,24 +14,21 @@ const categories = [
     name: "Food Preparation",
     items: ["Idli Steamer", "Dhokla Steamer", "Commercial Food Steamer", "Milk Steamer", "Machines"],
   },
-  //mmm
   {
     name: "Bakery Equipment",
-    items: ["Deep Fryer", "Donut Fryer", "Pressure Fryer","Oven"],
+    items: ["Deep Fryer", "Donut Fryer", "Pressure Fryer", "Oven"],
   },
-  // Nanum  irkeran 
-  //okay fine
   {
     name: "Chicken Barbecue Machine",
     items: ["Grill Chicken Machine", "Shawarma Machine", "Alfaham Machine", "Barbeque Machine"],
   },
   {
     name: "Business Type",
-    items: ["Machine","Cart","Showcase"],
-  },{
+    items: ["Machine", "Cart", "Showcase"],
+  }, {
     name: "Beverage items",
     items: ["Grill Chicken Machine", "Shawarma Machine", "Alfaham Machine", "Barbeque Machine"],
-  },{
+  }, {
     name: "Commercial Machines",
     items: ["Grill Chicken Machine", "Shawarma Machine", "Alfaham Machine", "Barbeque Machine"],
   },
@@ -186,8 +182,8 @@ const Navbar = ({ onSearchChange }) => {
           <Box
             sx={{
               display: 'flex',
-              overflowX: 'auto', // Enables horizontal scroll on mobile
-              flexWrap: 'nowrap', // Ensures items stay on one line
+              overflowX: 'auto',
+              flexWrap: 'nowrap',
               width: '100%',
               paddingY: 1,
             }}
@@ -221,31 +217,30 @@ const Navbar = ({ onSearchChange }) => {
                 >
                   {category.items.map((item, i) => (
                     <MenuItem key={i} onClick={handleClose}>
-                      
-<Link
-to={
-  item === 'Commercial Gas Range' ? '/Commerical_Gas' :
-    item === 'Commercial Electric Range' ? '/Commerical_Electric' :
-      item === 'Commercial Induction Cooktop' ? '/Commerical_Induction' :
-        item === 'Infrared Cooktop' ? '/Infrared-CookTop' :
-          item === "Idli Steamer" ? '/IdlySteamer' :
-            item === "Dhokla Steamer" ? '/DhoklaSteamer' :
-              item === "Commercial Food Steamer" ? '/CommercialSteamer' :
-                item === "Milk Steamer" ? '/MilkSteamer' :
-                  item === "Deep Fryer" ? '/DeepFry' :
-                    item === "Donut Fryer" ? '/DonutFry' :
-                      item === "Pressure Fryer" ? '/PressureFry' :
-                        item === "Grill Chicken Machine" ? '/GrillChicken' :
+
+                      <Link
+                        to={
+                          item === 'Commercial Gas Range' ? '/Commerical_Gas' :
+                          item === 'Commercial Electric Range' ? '/Commerical_Electric' :
+                          item === 'Commercial Induction Cooktop' ? '/Commerical_Induction' :
+                          item === 'Infrared Cooktop' ? '/Infrared-CookTop' :
+                          item === "Idli Steamer" ? '/IdlySteamer' :
+                          item === "Dhokla Steamer" ? '/DhoklaSteamer' :
+                          item === "Commercial Food Steamer" ? '/CommercialSteamer' :
+                          item === "Milk Steamer" ? '/MilkSteamer' :
+                          item === "Deep Fryer" ? '/DeepFry' :
+                          item === "Donut Fryer" ? '/DonutFry' :
+                          item === "Pressure Fryer" ? '/PressureFry' :
+                          item === "Grill Chicken Machine" ? '/GrillChicken' :
                           item === "Shawarma Machine" ? '/Shawarma' :
-                            item === "Alfaham Machine" ? '/Alfaham' :
-                              item === "Barbeque Machine" ? '/Barbeque' :
-                                item === "Grinder" ? '/Grinder' :
-                                  item === "Machines" ? '/PreparationMachines':
-                                   item === "Oven" ? '/Oven' :
-                                    item === "Machine" ? '/BusinessMachines':
-                                     item === "Cart" ? '/Cart':
-                                      item === "Showcase" ? '/Showcase':
-                                '#'}
+                          item === "Alfaham Machine" ? '/Alfaham' :
+                          item === "Barbeque Machine" ? '/Barbeque' :
+                          item === "Grinder" ? '/Grinder' :
+                          item === "Machines" ? '/PreparationMachines' :
+                          item === "Oven" ? '/Oven' :
+                          item === "Machine" ? '/BusinessMachines' :
+                          item === "Cart" ? '/Cart' :
+                          item === "Showcase" ? '/Showcase' : '#'}
                         style={{ textDecoration: 'none', color: 'inherit' }}
                       >
                         {item}
@@ -264,7 +259,3 @@ to={
 };
 
 export default Navbar;
-
-
-
-
