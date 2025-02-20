@@ -15,32 +15,27 @@ const products = [
   {
     name: "Commercial Induction Cooktop",
     imageUrl: img1,
-    description: "High-efficiency induction cooktop designed for commercial kitchens with precise temperature control.",
-    price: "$599.99",
+   
   },
   {
     name: "Commercial Induction Cooktop",
     imageUrl: img2,
-    description: "High-efficiency induction cooktop designed for commercial kitchens with precise temperature control.",
-    price: "$599.99",
+  
   },
   {
     name: "Commercial Induction Cooktop",
     imageUrl: img3,
-    description: "High-efficiency induction cooktop designed for commercial kitchens with precise temperature control.",
-    price: "$599.99",
+    
   },
   {
     name: "Commercial Induction Cooktop",
     imageUrl: img4,
-    description: "High-efficiency induction cooktop designed for commercial kitchens with precise temperature control.",
-    price: "$599.99",
+   
   },
   {
     name: "Commercial Induction Cooktop",
     imageUrl: img5,
-    description: "High-efficiency induction cooktop designed for commercial kitchens with precise temperature control.",
-    price: "$599.99",
+   
   },
 ];
 

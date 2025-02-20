@@ -12,19 +12,17 @@ const products = [
     name: "Electric Donut Fryer Shallow",
     imageUrl: img1,
     description: "",
-    price: "Rs:2000"
   },
   {
     name: "Idle steamer 8 Tray",
     imageUrl: img2,
     description: "Donut Fryer",
-    price: "1000"
+    
   },
   {
     name: "Donut Fryer automatic",
     imageUrl: img3,
     description: "",
-    price: "Rs:500"
   },
 ];
 

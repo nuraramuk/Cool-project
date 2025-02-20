@@ -17,50 +17,41 @@ const products = [
   {
     name: "Cooton Candy",
     imageUrl: img1,
-    description: "Advanced infrared cooktop offering fast and efficient heating for professional kitchens.",
-    price: "$499.99",
+  
   },
   {
     name: "Chocolate Fountain",
     imageUrl: img2,
-    description: "Advanced infrared cooktop offering fast and efficient heating for professional kitchens.",
-    price: "$499.99",
+ 
   },
   {
     name: "Quail Egg",
     imageUrl: img3,
-    description: "Advanced infrared cooktop offering fast and efficient heating for professional kitchens.",
-    price: "$499.99",
+
   },
   {
     name: "Ice Cream Machine",
     imageUrl: img4,
-    description: "Advanced infrared cooktop offering fast and efficient heating for professional kitchens.",
-    price: "$499.99",
+  
   },
   {
     name: "Blooming Onion",
     imageUrl: img5,
-    description: "Advanced infrared cooktop offering fast and efficient heating for professional kitchens.",
-    price: "$499.99",
+ 
   },
   {
     name: "Planetary Mixer",
     imageUrl: img6,
-    description: "Advanced infrared cooktop offering fast and efficient heating for professional kitchens.",
-    price: "$499.99",
+
   },
   {
     name: "PopCorn Machines",
     imageUrl: img7,
-    description: "Advanced infrared cooktop offering fast and efficient heating for professional kitchens.",
-    price: "$499.99",
+   
   },
   {
     name: "Sweet Corn Machines",
     imageUrl: img8,
-    description: "Advanced infrared cooktop offering fast and efficient heating for professional kitchens.",
-    price: "$499.99",
   },
 
 ];

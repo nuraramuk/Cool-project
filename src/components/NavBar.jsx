@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import SearchIcon from '@mui/icons-material/Search';
 import PhoneIcon from '@mui/icons-material/Phone';
 import HomeIcon from '@mui/icons-material/Home';
+import { useNavigate } from 'react-router-dom';
+
 
 const categories = [
   {
@@ -25,14 +27,15 @@ const categories = [
   {
     name: "Business Type",
     items: ["Machine", "Cart", "Showcase"],
-  }, {
-    name: "Beverage items",
-    items: ["Grill Chicken Machine", "Shawarma Machine", "Alfaham Machine", "Barbeque Machine"],
-  }, {
-    name: "Commercial Machines",
-    items: ["Grill Chicken Machine", "Shawarma Machine", "Alfaham Machine", "Barbeque Machine"],
-  },
+  }, 
+]
 
+const catogerios1= [
+  {
+    name1: "Beverage items",
+  }, {
+    name1: "Commercial Machines",
+  },
 ];
 
 
@@ -40,6 +43,7 @@ const Navbar = ({ onSearchChange }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [anchorEl, setAnchorEl] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState(null);
+  const navigate = useNavigate();
 
   const handleSearchChange = (event) => {
     const newSearchTerm = event.target.value;
@@ -60,6 +64,14 @@ const Navbar = ({ onSearchChange }) => {
     setAnchorEl(null);
     setSelectedCategory(null);
   };
+
+  const handleClick1 = (event, category) => {
+    if (category.name1 === "Beverage items") {
+      navigate('/Commerical_Gas');
+    } else if (category.name1 === 'Commercial Machines'){
+      navigate('/PreparationMachines');
+    }
+  }
 
   return (
     <>
@@ -159,6 +171,7 @@ const Navbar = ({ onSearchChange }) => {
         </Toolbar>
       </AppBar>
 
+      
 
 
       {/* Dropdown Menu Section */}
@@ -177,6 +190,7 @@ const Navbar = ({ onSearchChange }) => {
               <HomeIcon />
             </IconButton>
           </Box>
+          
 
           {/* Scrollable Menu Items */}
           <Box
@@ -188,6 +202,10 @@ const Navbar = ({ onSearchChange }) => {
               paddingY: 1,
             }}
           >
+            
+
+            {/* Menu Item 1 */}
+           
             {categories.map((category, index) => (
               <div key={index}>
                 <Button
@@ -207,6 +225,7 @@ const Navbar = ({ onSearchChange }) => {
                 >
                   {category.name}
                 </Button>
+                
 
                 <Menu
                   anchorEl={anchorEl}
@@ -250,6 +269,26 @@ const Navbar = ({ onSearchChange }) => {
                 </Menu>
               </div>
             ))}
+             {catogerios1.map((category, index) => 
+            <div key={index}>
+              <Button
+              color='inherit'
+              onMouseEnter={(event) => handleClick1(event, category)}
+              sx={{ 
+                textTransform: 'none',
+                fontSize: { xs: '14px', sm: '15px' },
+                mx: 1,
+                fontFamily: 'Roboto',
+                backgroundColor: 'white',
+                color: 'orangered',
+                borderRadius: '15px',
+                whiteSpace: 'nowrap',
+                    '&:hover': { backgroundColor: '#fff', color: 'orangered' },
+              }} 
+              >
+                {category.name1}
+              </Button>
+            </div>)}
           </Box>
         </Toolbar>
       </AppBar>

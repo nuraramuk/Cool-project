@@ -14,38 +14,32 @@ const products = [
   {
     name: "Electric barbeque",
     imageUrl: img1,
-    description: "",
-    price: "Rs:2500"
+   
   },
   {
     name: "Stainless steel barbeque",
     imageUrl: img2,
-    description: "",
-    price: "Rs:2500"
+   
   },
   {
     name: "Stainless steel barbeque with roller",
     imageUrl: img3,
-    description: "",
-    price: "Rs:2500"
+   
   },
   {
     name: "Barbeque Closer Type",
     imageUrl: img4,
-    description: "",
-    price: "Rs:2500"
+  
   },
   {
     name: "Smokeless Barbecue Oven Small Electric",
     imageUrl: img5,
-    description: "",
-    price: "Rs:2500"
+    
   },
   {
     name: "Smokeless Barbecue Oven Big Gas",
     imageUrl: img6,
-    description: "",
-    price: "Rs:2500"
+ 
   },
 ];
 

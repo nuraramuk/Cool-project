@@ -16,50 +16,42 @@ const products = [
   {
     name: 'Food Steamer 1',
     imageUrl: img1,
-    description: 'Multi-purpose food steamer for efficient cooking.',
-    price: '$1000',
+    
   },
   {
     name: 'Food Steamer 2',
     imageUrl: img2,
-    description: 'Compact electric steamer with 4 trays.',
-    price: '$800',
+ 
   },
   {
     name: 'Food Steamer 3',
     imageUrl: img3,
-    description: 'Gas-operated steamer with 24 trays.',
-    price: '$1500',
+     
   },
   {
     name: 'Food Steamer 4',
     imageUrl: img4,
-    description: 'Commercial rice steamer for large-scale operations.',
-    price: '$1200',
+    
   },
   {
     name: 'Food Steamer 5',
     imageUrl: img5,
-    description: 'Gas food steamer with 6 trays.',
-    price: '$1100',
+     
   },
   {
     name: 'Food Steamer 6',
     imageUrl: img6,
-    description: 'Electric food steamer for versatile cooking.',
-    price: '$950',
+   
   },
   {
     name: 'Food Steamer 7',
     imageUrl: img7,
-    description: 'High-efficiency food steamer for professional kitchens.',
-    price: '$1300',
+    
   },
   {
     name: 'Food Steamer 8',
     imageUrl: img8,
-    description: 'Heavy-duty food steamer with multiple functions.',
-    price: '$1400',
+     
   },
 ];
 

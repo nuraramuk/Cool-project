@@ -18,62 +18,52 @@ const products = [
   {
     name: "Atta Kneader",
     imageUrl: img1,
-    description: "",
-    price: "Rs:1000"
+     
   },
   {
     name: "Coconut Scrapper",
     imageUrl: img2,
-    description: "",
-    price: "Rs:1400"
+    
   },
   {
     name: "Holwa Maker",
     imageUrl: img3,
-    description: "",
-    price: "Rs:1400"
+    
   },
   {
     name: "Idiyappam Maker",
     imageUrl: img4,
-    description: "",
-    price: "Rs:1400"
+     
   },
   {
     name: "Noodles Maker",
     imageUrl: img5,
-    description: "",
-    price: "Rs:1400"
+    
   },
   {
     name: "Peeler",
     imageUrl: img6,
-    description: "",
-    price: "Rs:1400"
+   
   },
   {
     name: "Sanwich Maker",
     imageUrl: img7,
-    description: "",
-    price: "Rs:1400"
+     
   },
   {
     name: "Uruli Roaster",
     imageUrl: img8,
-    description: "",
-    price: "Rs:1400"
+     
   },
   {
     name: " Vegetable Cutter",
     imageUrl: img9,
-    description: "",
-    price: "Rs:1400"
+   
   },
   {
     name: "Waffle Maker",
     imageUrl: img10,
-    description: "",
-    price: "Rs:1400"
+    
   },
 
 ];

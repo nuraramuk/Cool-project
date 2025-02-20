@@ -10,14 +10,12 @@ const products = [
   {
     name: "Electric Shawarma SS Body",
     imageUrl: img1,
-    description: "",
-    price: "Rs:1000"
+
   },
   {
     name: "Shawarma Machine",
     imageUrl: img2,
-    description: "",
-    price: "Rs:1400"
+  
   },
 ];
 

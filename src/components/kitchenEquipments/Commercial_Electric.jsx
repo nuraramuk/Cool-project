@@ -7,10 +7,10 @@ import Elec3 from '../../asserts/Kitchen/Electric/images (1).jpeg';
 import Elec4 from '../../asserts/Kitchen/Electric/images.jpeg';
 
 const products = [
-  { name: "Idli Steamer", imageUrl: Elec1, price: "$199.99" },
-  { name: "Dhokla Steamer", imageUrl: Elec2, price: "$249.99" },
-  { name: "Commercial Steamer", imageUrl: Elec3, price: "$999.99" },
-  { name: "Milk Steamer", imageUrl: Elec4, price: "$149.99" },
+  { name: "Idli Steamer", imageUrl: Elec1 },
+  { name: "Dhokla Steamer", imageUrl: Elec2 },
+  { name: "Commercial Steamer", imageUrl: Elec3},
+  { name: "Milk Steamer", imageUrl: Elec4},
 ];
 
 function Commercial_Electric() {

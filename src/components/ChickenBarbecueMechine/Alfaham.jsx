@@ -11,20 +11,17 @@ const products = [
   {
     name: "Alfaham Chicken Barbecue Machine",
     imageUrl: img1,
-    description: "",
-    price: "Rs:1000"
+   
   },
   {
     name: "Alfaham Chicken Barbecue Machine",
     imageUrl: img2,
-    description: "",
-    price: "Rs:200"
+ 
   },
   {
     name: "Alfaham Chicken Barbecue Machine 3 Tray",
     imageUrl: img3,
-    description: "",
-    price: "Rs:2500"
+
   },
   // {
   //     name: "Chicken Grill Machine 12 Tray",

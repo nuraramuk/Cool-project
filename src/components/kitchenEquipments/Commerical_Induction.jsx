@@ -13,38 +13,32 @@ const products = [
   {
     name: "Infrared Cooktop",
     imageUrl: img1,
-    description: "Advanced infrared cooktop offering fast and efficient heating for professional kitchens.",
-    price: "$499.99",
+  
   },
   {
     name: "Infrared Cooktop",
     imageUrl: img2,
-    description: "Advanced infrared cooktop offering fast and efficient heating for professional kitchens.",
-    price: "$499.99",
+  
   },
   {
     name: "Infrared Cooktop",
     imageUrl: img3,
-    description: "Advanced infrared cooktop offering fast and efficient heating for professional kitchens.",
-    price: "$499.99",
+
   },
   {
     name: "Infrared Cooktop",
     imageUrl: img4,
-    description: "Advanced infrared cooktop offering fast and efficient heating for professional kitchens.",
-    price: "$499.99",
+    
   },
   {
     name: "Infrared Cooktop",
     imageUrl: img5,
-    description: "Advanced infrared cooktop offering fast and efficient heating for professional kitchens.",
-    price: "$499.99",
+   
   },
   {
     name: "Infrared Cooktop",
     imageUrl: img6,
-    description: "Advanced infrared cooktop offering fast and efficient heating for professional kitchens.",
-    price: "$499.99",
+ 
   }
 ];
 
