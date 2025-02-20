@@ -12,26 +12,22 @@ const products = [
   {
     name: "Conventional Ordinary Wet Grinder",
     imageUrl: img1,
-    description: "Advanced infrared cooktop offering fast and efficient heating for professional kitchens.",
-    price: "$499.99",
+    
   },
   {
     name: "Commercial Tilting Wet Grinder",
     imageUrl: img2,
-    description: "Advanced infrared cooktop offering fast and efficient heating for professional kitchens.",
-    price: "$499.99",
+
   },
   {
     name: "Instant Wet Grinder",
     imageUrl: img3,
-    description: "Advanced infrared cooktop offering fast and efficient heating for professional kitchens.",
-    price: "$499.99",
+    
   },
   {
     name: "Table Tap Wet Grinder",
     imageUrl: img4,
-    description: "Advanced infrared cooktop offering fast and efficient heating for professional kitchens.",
-    price: "$499.99",
+   
   },
 
 ];

@@ -13,38 +13,32 @@ const products = [
   {
     name: 'Milk Steamer 1',
     imageUrl: img1,
-    description: 'Efficient milk steamer for quick frothing of milk.',
-    price: '$1000',
+     
   },
   {
     name: 'Milk Steamer 2',
     imageUrl: img2,
-    description: 'Compact milk steamer for small-scale operations.',
-    price: '$1000',
+    
   },
   {
     name: 'Milk Steamer 3',
     imageUrl: img3,
-    description: 'Professional-grade milk steamer with rapid heating.',
-    price: '$1000',
+   
   },
   {
     name: 'Milk Steamer 4',
     imageUrl: img4,
-    description: 'Sleek and modern milk steamer with easy-to-use controls.',
-    price: '$1000',
+     
   },
   {
     name: 'Milk Steamer 5',
     imageUrl: img4,
-    description: 'High-efficiency milk steamer designed for commercial use.',
-    price: '$1000',
+   
   },
   {
     name: 'Milk Steamer 6',
     imageUrl: img5,
-    description: 'Durable milk steamer for cafes and restaurants.',
-    price: '$1000',
+     
   },
 ];
 

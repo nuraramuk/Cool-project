@@ -11,20 +11,17 @@ const products = [
   {
     name: "Chicken Grill Machine",
     imageUrl: img1,
-    description: "",
-    price: "Rs:10,000"
+   
   },
   {
     name: "Commercial Chicken Grill Machine",
     imageUrl: img2,
-    description: "",
-    price: "$666"
+   
   },
   {
     name: "Small Chicken Grill Machine",
     imageUrl: img3,
-    description: "",
-    price: "$666"
+ 
   },
 ];
 

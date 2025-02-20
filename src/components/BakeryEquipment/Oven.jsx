@@ -16,44 +16,36 @@ const products = [
   {
     name: "Convection Oven",
     imageUrl: img1,
-    description: "Advanced infrared cooktop offering fast and efficient heating for professional kitchens.",
-    price: "$499.99",
   },
   {
     name: "Industrial Oven",
     imageUrl: img2,
-    description: "Advanced infrared cooktop offering fast and efficient heating for professional kitchens.",
-    price: "$499.99",
+
   },
   {
     name: "Microwave Oven",
     imageUrl: img3,
-    description: "Advanced infrared cooktop offering fast and efficient heating for professional kitchens.",
-    price: "$499.99",
+
   },
   {
     name: "OTG",
     imageUrl: img4,
-    description: "Advanced infrared cooktop offering fast and efficient heating for professional kitchens.",
-    price: "$499.99",
+
   },
   {
     name: "Pizza Oven",
     imageUrl: img5,
-    description: "Advanced infrared cooktop offering fast and efficient heating for professional kitchens.",
-    price: "$499.99",
+ 
   },
   {
     name: "Rotary Oven",
     imageUrl: img6,
-    description: "Advanced infrared cooktop offering fast and efficient heating for professional kitchens.",
-    price: "$499.99",
+
   },
   {
     name: "Steam Oven",
     imageUrl: img7,
-    description: "Advanced infrared cooktop offering fast and efficient heating for professional kitchens.",
-    price: "$499.99",
+
   },
 
 ];

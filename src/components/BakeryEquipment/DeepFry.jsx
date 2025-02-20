@@ -14,31 +14,30 @@ const products = [
     name: "Deep Fry",
     imageUrl: img1,
     description: "",
-    price: "Rs:2500"
   },
   {
     name: "Electric Deep Fry",
     imageUrl: img2,
     description: "",
-    price: "Rs:3000"
+  
   },
   {
     name: "Mini Electric Deep Fry",
     imageUrl: img3,
     description: "",
-    price: "Rs:2000"
+     
   },
   {
     name: "Deep Fryer 4ltr Electric Single Tank Indulge",
     imageUrl: img4,
     description: "",
-    price: "Rs:2000"
+     
   },
   {
     name: "Deep Fryer 20Ltr Gas Dean",
     imageUrl: img5,
     description: "",
-    price: "Rs:2000"
+     
   },
 ];
 

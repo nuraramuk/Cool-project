@@ -12,26 +12,22 @@ const products = [
   {
     name: 'Dhokla Steamer 1',
     imageUrl: img1,
-    description: 'Efficient Dhokla Steamer for perfect cooking every time.',
-    price: '$1000',
+     
   },
   {
     name: 'Dhokla Steamer 2',
     imageUrl: img2,
-    description: 'Commercial-grade Dhokla Steamer with multi-tier trays.',
-    price: '$1500',
+   
   },
   {
     name: 'Dhokla Steamer 3',
     imageUrl: img3,
-    description: 'Durable steamer for restaurant-grade Dhokla preparation.',
-    price: '$1200',
+ 
   },
   {
     name: 'Dhokla Steamer 4',
     imageUrl: img4,
-    description: 'Large aluminum steamer for bulk cooking.',
-    price: '$1800',
+  
   },
 ];
 

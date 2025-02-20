@@ -171,14 +171,14 @@ import img8 from '../../asserts/Kitchen/images.jpeg';
 import imgDiscount from '../../asserts/Kitchen/Electric/discount.webp';
 
 const products = [
-  { name: "Commercial Gas Range", imageUrl: img1, description: "High-performance commercial gas range for professional kitchens.", price: "$899.99" },
-  { name: "Commercial Electric Range", imageUrl: img2, description: "Efficient electric range suitable for fast-paced kitchens.", price: "$799.99" },
-  { name: "Commercial Induction ", imageUrl: img3, description: "State-of-the-art induction cooktop for precise temperature control.", price: "$1,199.99" },
-  { name: "Infrared Cooktop", imageUrl: img4, description: "Fast and efficient infrared cooktop for any kitchen.", price: "$999.99" },
-  { name: "Infrared Cooktop", imageUrl: img5, description: "Fast and efficient infrared cooktop for any kitchen.", price: "$999.99" },
-  { name: "Infrared Cooktop", imageUrl: img6, description: "Fast and efficient infrared cooktop for any kitchen.", price: "$999.99" },
-  { name: "Infrared Cooktop", imageUrl: img7, description: "Fast and efficient infrared cooktop for any kitchen.", price: "$999.99" },
-  { name: "Infrared Cooktop", imageUrl: img8, description: "Fast and efficient infrared cooktop for any kitchen.", price: "$999.99" },
+  { name: "Commercial Gas Range", imageUrl: img1},
+  { name: "Commercial Electric Range", imageUrl: img2},
+  { name: "Commercial Induction ", imageUrl: img3},
+  { name: "Infrared Cooktop", imageUrl: img4 },
+  { name: "Gas Range Tabletop Single", imageUrl: img5},
+  { name: "Infrared Cooktop", imageUrl: img6 },
+  { name: "Infrared Cooktop", imageUrl: img7},
+  { name: "Infrared Cooktop", imageUrl: img8},
 ];
 
 function Commercial_Gas() {

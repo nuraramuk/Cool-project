@@ -12,26 +12,25 @@ const products = [
   {
     name: "Idle steamer 6 Tray",
     imageUrl: img1,
-    description: "//////////",
-    price: "$666"
+    description: "",
+  
   },
   {
     name: "Idle steamer 8 Tray",
     imageUrl: img2,
-    description: "///////////",
-    price: "$666"
+    description: "",
+   
   },
   {
     name: "Idle steamer 10 Tray",
     imageUrl: img3,
-    description: "//////////",
-    price: "$666"
+    description: "",
+
   },
   {
     name: "Idle steamer 12 Tray",
     imageUrl: img4,
-    description: "/////////",
-    price: "$666"
+    description: "",
   },
 ];
 
