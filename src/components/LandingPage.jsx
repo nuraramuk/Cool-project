@@ -23,12 +23,12 @@ const imageList = [
 ];
 
 const carouselItems = [
-  {
-    image: 'images/Carousel.jpg',
-    title: 'Automatic Sausage Filling Machine',
-    description: 'Boost your production efficiency with our cutting-edge, high-speed filling machine.',
-    buttonText: 'Order Now',
-  },
+  // {
+  //   image: 'images/Carousel.jpg',
+  //   title: 'Automatic Sausage Filling Machine',
+  //   description: 'Boost your production efficiency with our cutting-edge, high-speed filling machine.',
+  //   buttonText: 'Order Now',
+  // },
 ];
 
 const LandingPage = ({ searchTerm }) => {
@@ -159,14 +159,14 @@ const LandingPage = ({ searchTerm }) => {
       <Box sx={{ backgroundColor: '#fff', padding: '40px 20px' }}>
         <Container>
           <Typography variant="h4" sx={{ textAlign: 'center', fontWeight: 'bold', color: '#333', marginBottom: 3 }}>
-            Our Industrial Solutions
+          
           </Typography>
           <Grid container spacing={3}>
             {filteredItems.map((image, index) => (
               <Grid item xs={12} sm={6} md={3} key={index}>
                 <Card
                   sx={{
-                    height: 320,
+                    height: 280,
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'space-between',
@@ -205,20 +205,6 @@ const LandingPage = ({ searchTerm }) => {
                   </Typography>
 
                   {/* Add to Cart Button */}
-                  <Box sx={{ display: 'flex', justifyContent: 'center', paddingBottom: 1 }}>
-                    <IconButton
-                      color="primary"
-                      onClick={() => handleAddToCart(image)}
-                      sx={{
-                        backgroundColor: '#004e92',
-                        color: 'white',
-                        borderRadius: '50%',
-                        '&:hover': { backgroundColor: '#003366' },
-                      }}
-                    >
-                      <ShoppingCartIcon />
-                    </IconButton>
-                  </Box>
                 </Card>
               </Grid>
             ))}

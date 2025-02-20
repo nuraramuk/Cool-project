@@ -1,56 +1,68 @@
 import React, { useState, useEffect } from 'react';
 import { Grid, Card, CardContent, CardMedia, Typography, IconButton, Skeleton } from '@mui/material';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import img1 from '../../asserts/Bakery/Deep Fryer/633ad2f364c21f45d211ce14-topkitch-electric-deep-fryer-stainless.jpg';
-import img2 from '../../asserts/Bakery/Deep Fryer/images.jpeg';
-import img3 from '../../asserts/Bakery/Deep Fryer/images (1).jpeg';
-import img4 from '../../asserts/Bakery/Deep Fryer/en-01.webp';
-import img5 from '../../asserts/Bakery/Deep Fryer/Vn8lCadIlVE7FvT3AFMPo8Kd1lpsOmSxzIbYvSWp.webp';
+import img1 from '../../asserts/Commercial Machines/chapati.jpg'
+import img2 from '../../asserts/Commercial Machines/chicken cutting.avif'
+import img3 from '../../asserts/Commercial Machines/dosatawa.jpg'
+import img4 from '../../asserts/Commercial Machines/doughsheeter.jpg'
+import img5 from '../../asserts/Commercial Machines/filling.jpg'
+import img6 from '../../asserts/Commercial Machines/flourmill.webp'
+import img7 from '../../asserts/Commercial Machines/kheema.png'
+import img8 from '../../asserts/Commercial Machines/tandoorranger.webp'
+
+
 import imgDiscount from '../../asserts/Kitchen/Electric/discount.webp';
 
-// Sample product data for Deepfry
 const products = [
   {
-    name: "Deep Fry",
+    name: "Chapati Maker",
     imageUrl: img1,
-    description: "",
-  },
-  {
-    name: "Electric Deep Fry",
-    imageUrl: img2,
-    description: "",
   
   },
   {
-    name: "Mini Electric Deep Fry",
+    name: "Chicken Cutter",
+    imageUrl: img2,
+ 
+  },
+  {
+    name: "Dosa Tawa",
     imageUrl: img3,
-    description: "",
-     
+
   },
   {
-    name: "Deep Fryer 4ltr Electric Single Tank Indulge",
+    name: "Dough Sheeter",
     imageUrl: img4,
-    description: "",
-     
+  
   },
   {
-    name: "Deep Fryer 20Ltr Gas Dean",
+    name: "Filling Machine",
     imageUrl: img5,
-    description: "",
-     
+ 
   },
+  {
+    name: "Flour Mill Machine",
+    imageUrl: img6,
+
+  },
+  {
+    name: "Kheema Machine",
+    imageUrl: img7,
+   
+  },
+  {
+    name: "Tandoor Range",
+    imageUrl: img8,
+  },
+
 ];
 
-function DeepFry() {
+function CommercialMachines() {
   const [loading, setLoading] = useState(true);
 
-  // Simulate loading state for demonstration
+  // Simulate loading effect
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false); // Stop loading after 2 seconds
-    }, 1000);
-
-    return () => clearTimeout(timer); // Cleanup the timer
+    const timer = setTimeout(() => setLoading(false), 1000); // Loading for 1.5s
+    return () => clearTimeout(timer);
   }, []);
 
   return (
@@ -126,4 +138,4 @@ function DeepFry() {
   );
 }
 
-export default DeepFry;
+export default CommercialMachines;
