@@ -92,7 +92,7 @@ function Beverage() {
                       </>
                     ) : (
                       <>
-                        <Typography variant="h6" align="center" sx={{ fontWeight: 'bold', color: 'orangered' }}>
+                        <Typography variant="h6" align="center" sx={{fontFamily:'Roboto',fontSize:'16px', fontWeight: 'bold', color: 'orangered' }}>
                           {product.name}
                         </Typography>
                         <Typography variant="h6" align="center" color="primary">
@@ -106,7 +106,7 @@ function Beverage() {
             ))}
           </Grid>
         </Grid>
-        <Grid item xs={12} sm={4} md={3} sx={{ display: 'flex', justifyContent: 'center' }}>
+        <Grid item xs={12} sm={4} md={3} sx={{ fontFamily:'Roboto',fontSize:'16px',display: 'flex', justifyContent: 'center' }}>
           {loading ? (
             <Skeleton variant="rectangular" width="100%" height={300} />
           ) : (
