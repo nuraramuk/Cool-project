@@ -19,7 +19,13 @@ const imageList = [
 
 const carouselItems = [
   {
-    image: 'images/Carousel.jpg',
+    image: 'images/electric-proofer.png',
+    title: 'Electric Proofer',
+    description: 'Achieve perfect proofing results every time.',
+    buttonText: 'Learn More',
+  },
+  {
+    image: 'images/automatic-sausage.png',
     title: 'Automatic Sausage Filling Machine',
     description: 'Boost your production efficiency with our cutting-edge, high-speed filling machine.',
     buttonText: 'Order Now',
@@ -30,12 +36,7 @@ const carouselItems = [
     description: 'Bake efficiently with our high-quality rotary rack oven.',
     buttonText: 'Shop Now',
   },
-  {
-    image: 'images/electric-proofer.png',
-    title: 'Electric Proofer',
-    description: 'Achieve perfect proofing results every time.',
-    buttonText: 'Learn More',
-  },
+  
 ];
 
 const LandingPage = ({ searchTerm }) => {
@@ -82,7 +83,7 @@ const LandingPage = ({ searchTerm }) => {
               display: index === currentIndex ? 'flex' : 'none',
               alignItems: 'center',
               justifyContent: 'center',
-              backgroundImage: `url(${item.image})`,
+              backgroundImage: url(${item.image}),
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               position: 'absolute',
