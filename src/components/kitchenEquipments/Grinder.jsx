@@ -27,7 +27,7 @@ const products = [
   {
     name: "Table Tap Wet Grinder",
     imageUrl: img4,
- 
+    price: "$499.99",
   },
 
 ];

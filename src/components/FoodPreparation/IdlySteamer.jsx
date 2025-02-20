@@ -10,24 +10,24 @@ import imgDiscount from '../../asserts/Kitchen/Electric/discount.webp';
 // Sample product data for FoodPreparation
 const products = [
   {
-    name: "Idle Steamer 6 Tray",
+    name: "Commercial Electrical Food Warmer",
     imageUrl: img1,
     
   },
   {
-    name: "Idle Steamer 8 Tray",
+    name: "Idle Steamer 5 Tray",
     imageUrl: img2,
     
   },
   {
-    name: "Idle Steamer 10 Tray",
+    name: "Food Warmer",
     imageUrl: img3,
    
   },
   {
-    name: "Idle Steamer 12 Tray",
+    name: "Commercial Aluminium Idli Steamer, comes with 12 Trays",
     imageUrl: img4,
-    
+
   },
 ];
 

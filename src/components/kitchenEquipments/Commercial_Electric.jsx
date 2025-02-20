@@ -7,10 +7,10 @@ import Elec3 from '../../asserts/Kitchen/Electric/images (1).jpeg';
 import Elec4 from '../../asserts/Kitchen/Electric/images.jpeg';
 
 const products = [
-  { name: "Idli Steamer", imageUrl: Elec1 },
-  { name: "Dhokla Steamer", imageUrl: Elec2 },
-  { name: "Commercial Steamer", imageUrl: Elec3},
-  { name: "Milk Steamer", imageUrl: Elec4},
+  { name: "Electric Commercial Cooking Range 4 Hot plate", imageUrl: Elec1 },
+  { name: "Electric Commercial Cooking Range 6 Burner Hot Plate", imageUrl: Elec2 },
+  // { name: "Commercial Steamer", imageUrl: Elec3},
+  { name: "Commercial Electric Stove", imageUrl: Elec4},
 ];
 
 function Commercial_Electric() {

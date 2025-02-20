@@ -14,44 +14,30 @@ import imgDiscount from '../../asserts/Kitchen/Electric/discount.webp';
 // Sample Products data for CommercialSteamer
 const products = [
   {
-    name: 'Food Steamer 1',
+    name: ' Commercial Electric Food Warmer Display Case',
     imageUrl: img1,
     
   },
   {
-    name: 'Food Steamer 2',
+    name: ' Commercial Multi Purpose Food Steamers',
     imageUrl: img2,
  
   },
   {
-    name: 'Food Steamer 3',
-    imageUrl: img3,
-     
-  },
-  {
-    name: 'Food Steamer 4',
+    name: 'Commercial Food Steamer 24 Trays',
     imageUrl: img4,
     
   },
   {
-    name: 'Food Steamer 5',
+    name: 'Multi purpose Food Steamer',
     imageUrl: img5,
      
   },
+  
   {
-    name: 'Food Steamer 6',
-    imageUrl: img6,
-   
-  },
-  {
-    name: 'Food Steamer 7',
+    name: 'Food Steamer',
     imageUrl: img7,
     
-  },
-  {
-    name: 'Food Steamer 8',
-    imageUrl: img8,
-     
   },
 ];
 
