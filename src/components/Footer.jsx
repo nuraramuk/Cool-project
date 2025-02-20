@@ -16,15 +16,15 @@ const Footer = () => {
         <Grid container spacing={4} justifyContent="space-between">
           {/* Company Information */}
           <Grid item xs={12} sm={6} md={3}>
-            <Typography variant="h6" sx={{ fontWeight: 'bold', marginBottom: 1 }}>
+            <Typography variant="h6" sx={{ fontWeight: 'bold', marginBottom: 1, fontFamily: 'Roboto' }}>
               Krishna Industries
             </Typography>
             <Typography variant="body2">
-              <Link href="tel:+919171585789" color="inherit" sx={{ textDecoration: 'none' }}>
+              <Link href="tel:+919171585789" color="inherit" sx={{ textDecoration: 'none', fontFamily: 'Roboto' }}>
                 📞+91 91715 85789
               </Link>
             </Typography>
-            <Typography variant="body2" sx={{ marginBottom: 1 }}>
+            <Typography variant="body2" sx={{ marginBottom: 1, fontFamily: 'Roboto' }}>
               📍338/D2C, Sri Venkateshwara Industrial Estate
               Balaguru Garden West, Peelamedu,
               Coimbatore - 641 004
@@ -33,7 +33,7 @@ const Footer = () => {
 
           {/* Social Media */}
           <Grid item xs={12} sm={6} md={3}>
-            <Typography variant="h6" sx={{ fontWeight: 'bold', marginBottom: 1 }}>
+            <Typography variant="h6" sx={{ fontWeight: 'bold', marginBottom: 1, fontFamily: 'Roboto' }}>
               Follow Us
             </Typography>
             <Box sx={{ display: 'flex', gap: 2 }}>
@@ -48,13 +48,13 @@ const Footer = () => {
 
           {/* Newsletter */}
           <Grid item xs={12} sm={6} md={3}>
-            <Typography variant="h6" sx={{ fontWeight: 'bold', marginBottom: 1 }}>
+            <Typography variant="h6" sx={{ fontWeight: 'bold', marginBottom: 1, fontFamily: 'Roboto' }}>
               Newsletter
             </Typography>
-            <Typography variant="body2" sx={{ marginBottom: 1 }}>
+            <Typography variant="body2" sx={{ marginBottom: 1, fontFamily: 'Roboto' }}>
               Subscribe to our newsletter to stay updated with our latest products.
             </Typography>
-            <Box sx={{ width: "100%", display: "flex", flexDirection: "column", gap: 1 }}>
+            <Box sx={{ width: "100%", display: "flex", flexDirection: "column", gap: 1, fontFamily: 'Roboto' }}>
               <input
                 type="email"
                 placeholder="Enter your email"
@@ -64,6 +64,7 @@ const Footer = () => {
                   boxSizing: "border-box", // Prevents overflow due to padding
                   borderRadius: "5px",
                   border: "1px solid #ccc",
+                  fontFamily: 'Roboto',
                   fontSize: "14px",
                 }}
               />
@@ -71,6 +72,7 @@ const Footer = () => {
                 style={{
                   backgroundColor: "#004e92",
                   color: "white",
+                  fontFamily: 'Roboto',
                   border: "none",
                   padding: "8px 16px",
                   borderRadius: "5px",
@@ -91,7 +93,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <Box sx={{ textAlign: 'center', marginTop: 2, marginBottom: 0 }}>
-          <Typography variant="body2" sx={{ opacity: 0.7 }}>
+          <Typography variant="body2" sx={{ opacity: 0.7, fontFamily: 'Roboto' }}>
             &copy; {new Date().getFullYear()} Krishna Industries. All rights reserved.
           </Typography>
         </Box>

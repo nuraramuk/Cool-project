@@ -10,22 +10,22 @@ import imgDiscount from '../../asserts/Kitchen/Electric/discount.webp';
 // Sample Products data for Dhokla Steamer
 const products = [
   {
-    name: 'Dhokla Steamer 1',
+    name: 'Dhokla Steamer 10 Tray',
     imageUrl: img1,
      
   },
   {
-    name: 'Dhokla Steamer 2',
+    name: 'Dhokla Maker',
     imageUrl: img2,
    
   },
   {
-    name: 'Dhokla Steamer 3',
+    name: 'Dhokla Steamer 12 Tray',
     imageUrl: img3,
  
   },
   {
-    name: 'Dhokla Steamer 4',
+    name: 'Small Idly Steamer',
     imageUrl: img4,
   
   },

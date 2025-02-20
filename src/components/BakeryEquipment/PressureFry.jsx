@@ -10,27 +10,23 @@ import imgDiscount from '../../asserts/Kitchen/Electric/discount.webp';
 // Sample product data for PressureFry
 const products = [
   {
-    name: "Idle steamer 6 Tray",
+    name: "Gas & Electric Pressure Fryer",
     imageUrl: img1,
-    description: "",
   
   },
   {
-    name: "Idle steamer 8 Tray",
+    name: "Commercial Gas Pressure Fryer",
     imageUrl: img2,
-    description: "",
-   
-  },
-  {
-    name: "Idle steamer 10 Tray",
-    imageUrl: img3,
-    description: "",
 
   },
   {
-    name: "Idle steamer 12 Tray",
+    name: "High Pressure Fried Chicken Fryer",
+    imageUrl: img3,
+
+  },
+  {
+    name: "Commercial Electric Pressure Fryer",
     imageUrl: img4,
-    description: "",
   },
 ];
 

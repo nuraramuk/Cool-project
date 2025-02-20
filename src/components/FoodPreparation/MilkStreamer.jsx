@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import img1 from '../../asserts/Food/Milk Steamer/616ZfRpBxhL._SL1500.webp';
 import img2 from '../../asserts/Food/Milk Steamer/71Vyx3t9euL.jpg';
-import img3 from '../../asserts/Food/Milk Steamer/71aO0anwcqL._AC_UF894,1000_QL80_.jpg';
+// import img3 from '../../asserts/Food/Milk Steamer/71aO0anwcqL._AC_UF894,1000_QL80_.jpg';
 import img4 from '../../asserts/Food/Milk Steamer/artboard_2_1_.png';
 import img5 from '../../asserts/Food/Milk Steamer/images.jpeg';
 import imgDiscount from '../../asserts/Kitchen/Electric/discount.webp';
@@ -11,32 +11,23 @@ import imgDiscount from '../../asserts/Kitchen/Electric/discount.webp';
 // Sample Products data for MilkSteamer
 const products = [
   {
-    name: 'Milk Steamer 1',
+    name: 'Electric Handheld Milk Wand Mixer Frother',
     imageUrl: img1,
      
   },
   {
-    name: 'Milk Steamer 2',
+    name: 'Dualit Cino Milk Steamer',
     imageUrl: img2,
     
   },
   {
-    name: 'Milk Steamer 3',
-    imageUrl: img3,
-   
-  },
-  {
-    name: 'Milk Steamer 4',
+    name: 'Stainless Steel Silver Electric Automatic Milk Frother and Warmer Steamer',
     imageUrl: img4,
      
   },
+
   {
-    name: 'Milk Steamer 5',
-    imageUrl: img4,
-   
-  },
-  {
-    name: 'Milk Steamer 6',
+    name: 'Milk Steamer',
     imageUrl: img5,
      
   },
