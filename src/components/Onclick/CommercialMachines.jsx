@@ -1,51 +1,62 @@
 import React, { useState, useEffect } from 'react';
 import { Grid, Card, CardContent, CardMedia, Typography, IconButton, Skeleton } from '@mui/material';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import img1 from '../../asserts/BusinessType/Cart/bicycle.jpg'
-import img2 from '../../asserts/BusinessType/Cart/container.jpg'
-import img3 from '../../asserts/BusinessType/Cart/food.webp'
-import img4 from '../../asserts/BusinessType/Cart/kiosk.png'
-import img5 from '../../asserts/BusinessType/Cart/push.jpg'
-import img6 from '../../asserts/BusinessType/Cart/truck.jpg'
+import img1 from '../../asserts/Commercial Machines/chapati.jpg'
+import img2 from '../../asserts/Commercial Machines/chicken cutting.avif'
+import img3 from '../../asserts/Commercial Machines/dosatawa.jpg'
+import img4 from '../../asserts/Commercial Machines/doughsheeter.jpg'
+import img5 from '../../asserts/Commercial Machines/filling.jpg'
+import img6 from '../../asserts/Commercial Machines/flourmill.webp'
+import img7 from '../../asserts/Commercial Machines/kheema.png'
+import img8 from '../../asserts/Commercial Machines/tandoorranger.webp'
 
 
 import imgDiscount from '../../asserts/Kitchen/Electric/discount.webp';
 
 const products = [
   {
-    name: "Bicycle Cart",
+    name: "Chapati Maker",
     imageUrl: img1,
-    
+  
   },
   {
-    name: "Container Cart",
+    name: "Chicken Cutter",
     imageUrl: img2,
  
   },
   {
-    name: "Food Cart",
+    name: "Dosa Tawa",
     imageUrl: img3,
 
   },
   {
-    name: "Kiosk Cart",
+    name: "Dough Sheeter",
     imageUrl: img4,
-
+  
   },
   {
-    name: "Push Cart",
+    name: "Filling Machine",
     imageUrl: img5,
-
+ 
   },
   {
-    name: "Food Truck",
+    name: "Flour Mill Machine",
     imageUrl: img6,
 
+  },
+  {
+    name: "Kheema Machine",
+    imageUrl: img7,
+   
+  },
+  {
+    name: "Tandoor Range",
+    imageUrl: img8,
   },
 
 ];
 
-function Cart() {
+function CommercialMachines() {
   const [loading, setLoading] = useState(true);
 
   // Simulate loading effect
@@ -85,7 +96,7 @@ function Cart() {
                       height="180"
                       image={product.imageUrl}
                       alt={product.name}
-                      sx={{ objectFit: 'contain', borderRadius: '15px 15px 0 0', margin:'5px' }}
+                      sx={{ objectFit: 'contain', borderRadius: '15px 15px 0 0' }}
                     />
                   )}
                   <CardContent>
@@ -127,4 +138,4 @@ function Cart() {
   );
 }
 
-export default Cart;
+export default CommercialMachines;

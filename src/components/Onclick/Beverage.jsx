@@ -1,51 +1,47 @@
 import React, { useState, useEffect } from 'react';
 import { Grid, Card, CardContent, CardMedia, Typography, IconButton, Skeleton } from '@mui/material';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import img1 from '../../asserts/BusinessType/Cart/bicycle.jpg'
-import img2 from '../../asserts/BusinessType/Cart/container.jpg'
-import img3 from '../../asserts/BusinessType/Cart/food.webp'
-import img4 from '../../asserts/BusinessType/Cart/kiosk.png'
-import img5 from '../../asserts/BusinessType/Cart/push.jpg'
-import img6 from '../../asserts/BusinessType/Cart/truck.jpg'
+import img1 from '../../asserts/Beverage/crusher.webp'
+import img2 from '../../asserts/Beverage/dispenser.jpg'
+import img3 from '../../asserts/Beverage/juicecounter.webp'
+import img4 from '../../asserts/Beverage/smoothie.jpg'
+import img5 from '../../asserts/Beverage/sugercane.webp'
+
 
 
 import imgDiscount from '../../asserts/Kitchen/Electric/discount.webp';
 
 const products = [
   {
-    name: "Bicycle Cart",
+    name: "Ice Crusher",
     imageUrl: img1,
-    
+  
   },
   {
-    name: "Container Cart",
+    name: "Juice Dispenser",
     imageUrl: img2,
  
   },
   {
-    name: "Food Cart",
+    name: "Juice Counter",
     imageUrl: img3,
 
   },
   {
-    name: "Kiosk Cart",
+    name: "Smoothie Maker",
     imageUrl: img4,
-
+  
   },
   {
-    name: "Push Cart",
+    name: "SugerCane Maker",
     imageUrl: img5,
-
+ 
   },
-  {
-    name: "Food Truck",
-    imageUrl: img6,
-
-  },
+  
 
 ];
 
-function Cart() {
+function Beverage() {
   const [loading, setLoading] = useState(true);
 
   // Simulate loading effect
@@ -85,7 +81,7 @@ function Cart() {
                       height="180"
                       image={product.imageUrl}
                       alt={product.name}
-                      sx={{ objectFit: 'contain', borderRadius: '15px 15px 0 0', margin:'5px' }}
+                      sx={{ objectFit: 'contain', borderRadius: '15px 15px 0 0' }}
                     />
                   )}
                   <CardContent>
@@ -127,4 +123,6 @@ function Cart() {
   );
 }
 
-export default Cart;
+export default Beverage;
+
+

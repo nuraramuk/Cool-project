@@ -67,9 +67,9 @@ const Navbar = ({ onSearchChange }) => {
 
   const handleClick1 = (event, category) => {
     if (category.name1 === "Beverage items") {
-      navigate('/Commerical_Gas');
+      navigate('/Beverage');
     } else if (category.name1 === 'Commercial Machines'){
-      navigate('/PreparationMachines');
+      navigate('/CommercialMachines');
     }
   }
 

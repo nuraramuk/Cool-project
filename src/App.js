@@ -24,6 +24,8 @@ import Oven from './components/BakeryEquipment/Oven';
 import BusinessMachines from './components/BusinessType/BusinessMachies';
 import Cart from './components/BusinessType/Cart';
 import Showcase from './components/BusinessType/Showcase';
+import Beverage from './components/Onclick/Beverage';
+import CommercialMachines from './components/Onclick/CommercialMachines';
 
 function App() {
 
@@ -59,6 +61,8 @@ function App() {
         <Route path='/BusinessMachines' element={<BusinessMachines/>}/>
         <Route path='/Cart' element={<Cart/>}/>
         <Route path='/Showcase' element={<Showcase/>}/>
+        <Route path='/Beverage' element={<Beverage/>}/>
+        <Route path='/CommercialMachines' element={<CommercialMachines/>}/>
       </Routes>
       <Footer />
     </BrowserRouter>
