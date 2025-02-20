@@ -1,32 +1,39 @@
 import React, { useState, useEffect } from 'react';
 import { Grid, Card, CardContent, CardMedia, Typography, IconButton, Skeleton } from '@mui/material';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import img1 from '../../asserts/Kitchen/Grinder/Grinder1.webp'
-import img2 from '../../asserts/Kitchen/Grinder/Grinder2.jpg'
-import img3 from '../../asserts/Kitchen/Grinder/Grinder3.jpg'
-import img4 from '../../asserts/Kitchen/Grinder/Grinder4.webp'
+import img1 from '../../asserts/BusinessType/showcase/bakery.avif'
+import img2 from '../../asserts/BusinessType/showcase/display.jpg'
+import img3 from '../../asserts/BusinessType/showcase/freezer.avif'
+import img4 from '../../asserts/BusinessType/showcase/glassdoor.jpg'
+import img5 from '../../asserts/BusinessType/showcase/grill.jpg'
+
 
 import imgDiscount from '../../asserts/Kitchen/Electric/discount.webp';
 
 const products = [
   {
-    name: "Conventional Ordinary Wet Grinder",
+    name: "Bakery Showcase",
     imageUrl: img1,
     
   },
   {
-    name: "Commercial Tilting Wet Grinder",
+    name: "Display showcase",
     imageUrl: img2,
 
   },
   {
-    name: "Instant Wet Grinder",
+    name: "Freezer Showcase",
     imageUrl: img3,
     
   },
   {
-    name: "Table Tap Wet Grinder",
+    name: "Glass Door Showcase",
     imageUrl: img4,
+   
+  },
+  {
+    name: "Grill Chicken",
+    imageUrl: img5,
    
   },
 
