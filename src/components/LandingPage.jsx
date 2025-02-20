@@ -83,7 +83,7 @@ const LandingPage = ({ searchTerm }) => {
               display: index === currentIndex ? 'flex' : 'none',
               alignItems: 'center',
               justifyContent: 'center',
-              backgroundImage: url(${item.image}),
+              backgroundImage: `url(${item.image})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               position: 'absolute',
