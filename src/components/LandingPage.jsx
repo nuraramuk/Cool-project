@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Typography, Button, Box, Grid, Card, CardMedia, Snackbar, Alert, IconButton } from '@mui/material';
 import { ArrowBackIosNew, ArrowForwardIos } from '@mui/icons-material';
-
+//final code
 const imageList = [
   { src: 'images/1.webp', name: 'Automatic Sausage Filling Machine' },
   { src: 'images/2.webp', name: 'Rotary Rack Oven 32 Trays Diesel / Gas' },
