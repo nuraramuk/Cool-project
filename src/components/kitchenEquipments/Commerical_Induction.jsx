@@ -1,45 +1,55 @@
 import React, { useState, useEffect } from 'react';
 import { Grid, Card, CardContent, CardMedia, Typography, IconButton, Skeleton } from '@mui/material';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import img1 from '../../asserts/Kitchen/Inducation/1730980691039-watmrkA.webp'
+// import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+// import img1 from '../../asserts/Kitchen/Inducation/1730980691039-watmrkA.webp'
 import img2 from '../../asserts/Kitchen/Inducation/2394_Induction_Hot_plate_5000w-228x228.jpg'
-import img3 from '../../asserts/Kitchen/Inducation/drop-in_induction_wok_3500_w-268x299.webp'
-import img4 from '../../asserts/Kitchen/Inducation/froth-flavor-froth-flavor-commercial-induction-cooktop-852369-original-imafjpbgnvgbjyn2.webp'
-import img5 from '../../asserts/Kitchen/Inducation/induction_wok_sirman_ih-35-wok-268x299.webp'
+// import img3 from '../../asserts/Kitchen/Inducation/drop-in_induction_wok_3500_w-268x299.webp'
+// import img4 from '../../asserts/Kitchen/Inducation/froth-flavor-froth-flavor-commercial-induction-cooktop-852369-original-imafjpbgnvgbjyn2.webp'
+// import img5 from '../../asserts/Kitchen/Inducation/induction_wok_sirman_ih-35-wok-268x299.webp'
 import img6 from '../../asserts/Kitchen/Inducation/table_top_induction_hob_3500_w-268x299.webp'
 import imgDiscount from '../../asserts/Kitchen/Electric/discount.webp';
 
+import img10 from '../../asserts/Kitchen/Infrared Induction/download (2).jpeg';
+import img12 from '../../asserts/Kitchen/Infrared Induction/images (1).jpeg';
+// import img13 from '../../asserts/Kitchen/Infrared Induction/images (2).jpeg';
+import img14 from '../../asserts/Kitchen/Infrared Induction/images (3).jpeg';
+import img15 from '../../asserts/Kitchen/Infrared Induction/images.jpeg';
+
+
 const products = [
   {
-    name: "Infrared Cooktop",
-    imageUrl: img1,
+    name: "Commercial Induction Induction",
+    imageUrl: img6,
   
   },
   {
-    name: "Infrared Cooktop",
+    name: "Silver Cooktop",
     imageUrl: img2,
   
   },
-  {
-    name: "Infrared Cooktop",
-    imageUrl: img3,
-
-  },
-  {
-    name: "Infrared Cooktop",
-    imageUrl: img4,
+   {
+      name: "Electric Wudnik Infrared Induction Cooktop",
+      imageUrl: img10,
+      
+     
+    },
+    {
+      name: "Commercial Induction Cooktop",
+      imageUrl: img12,
     
-  },
-  {
-    name: "Infrared Cooktop",
-    imageUrl: img5,
-   
-  },
-  {
-    name: "Infrared Cooktop",
-    imageUrl: img6,
- 
-  }
+    },
+  
+    {
+      name: "Black Induction Cooktop",
+      imageUrl: img14,
+     
+    },
+    {
+      name: "Double  Induction Cooktop",
+      imageUrl: img15,
+     
+    },
+
 ];
 
 function Commerical_induction() {

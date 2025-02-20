@@ -10,7 +10,7 @@ import { useNavigate } from 'react-router-dom';
 const categories = [
   {
     name: "Kitchen Equipment",
-    items: ["Commercial Gas Range", "Commercial Electric Range", "Commercial Induction Cooktop", "Infrared Cooktop", "Grinder"],
+    items: ["Commercial Gas Range", "Commercial Electric Range", "Induction Cooktop", "Grinder"],
   },
   {
     name: "Food Preparation",
