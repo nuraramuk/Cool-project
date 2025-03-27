@@ -81,10 +81,11 @@ const Navbar = ({ onSearchChange }) => {
         position="relative"
         sx={{
           top: 0,
-          background: 'orange',
+          background: '#F97300',
           boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)',
           padding: '1px 0',
-          zIndex: 1100 // Ensures it stays on top
+          zIndex: 1100, // Ensures it stays on top
+          fontFamily:'Roboto',fontSize:'16px',
         }}
       >
         <Toolbar>
@@ -175,7 +176,7 @@ const Navbar = ({ onSearchChange }) => {
 
 
       {/* Dropdown Menu Section */}
-      <AppBar position="sticky" sx={{ background: 'orange', zIndex: 1000 }}>
+      <AppBar position="sticky" sx={{ background: '#F97300', zIndex: 1000 }}>
         <Toolbar sx={{ paddingX: { xs: 1, sm: 2, md: 4 } }}>
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
             {/* Home Icon */}
@@ -220,6 +221,7 @@ const Navbar = ({ onSearchChange }) => {
                     color: 'orangered',
                     borderRadius: '15px',
                     whiteSpace: 'nowrap',
+                    fontFamily:'Roboto',fontSize:'16px',
                     '&:hover': { backgroundColor: '#fff', color: 'orangered' },
                   }}
                 >
@@ -260,7 +262,7 @@ const Navbar = ({ onSearchChange }) => {
                           item === "Machine" ? '/BusinessMachines' :
                           item === "Cart" ? '/Cart' :
                           item === "Showcase" ? '/Showcase' : '#'}
-                        style={{ textDecoration: 'none', color: 'inherit' }}
+                        style={{ textDecoration: 'none', color: 'inherit',fontFamily:'Roboto',fontSize:'16px', }}
                       >
                         {item}
                       </Link>

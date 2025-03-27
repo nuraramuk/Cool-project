@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Grid, Card, CardContent, CardMedia, Typography, IconButton, Skeleton } from '@mui/material';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { Grid, Card, CardContent, CardMedia, Typography, Skeleton } from '@mui/material';
+// import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import img1 from '../../asserts/Kitchen/Grinder/Grinder1.webp'
 import img2 from '../../asserts/Kitchen/Grinder/Grinder2.jpg'
 import img3 from '../../asserts/Kitchen/Grinder/Grinder3.jpg'
@@ -84,7 +84,7 @@ function Grinder() {
                       </>
                     ) : (
                       <>
-                        <Typography variant="h6" align="center" sx={{ fontWeight: 'bold', color: 'orangered' }}>
+                        <Typography variant="h6" align="center" sx={{fontFamily:'Roboto',fontSize:'16px', fontWeight: 'bold', color: 'orangered' }}>
                           {product.name}
                         </Typography>
                         <Typography variant="h6" align="center" color="primary">

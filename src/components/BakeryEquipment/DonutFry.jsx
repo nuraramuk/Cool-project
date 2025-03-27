@@ -80,7 +80,7 @@ function DonutFry() {
                       </>
                     ) : (
                       <>
-                        <Typography variant="h6" align="center" sx={{ fontWeight: 'bold', color: 'orangered' }}>
+                        <Typography variant="h6" align="center" sx={{fontFamily:'Roboto',fontSize:'16px', fontWeight: 'bold', color: 'orangered' }}>
                           {product.name}
                         </Typography>
                         <Typography variant="h6" align="center" color="primary">
