@@ -27,6 +27,7 @@ import Showcase from './components/BusinessType/Showcase';
 import Beverage from './components/Onclick/Beverage';
 import CommercialMachines from './components/Onclick/CommercialMachines';
 import BasicSpeedDial from './components/SpeedDial';
+import ProductDetailPage from './components/Details_page';
 
 function App() {
 
@@ -64,6 +65,7 @@ function App() {
         <Route path='/Showcase' element={<Showcase/>}/>
         <Route path='/Beverage' element={<Beverage/>}/>
         <Route path='/CommercialMachines' element={<CommercialMachines/>}/>
+        <Route path="/product/:id" element={<ProductDetailPage />} />
       </Routes>
       <Footer />
       <BasicSpeedDial/>
