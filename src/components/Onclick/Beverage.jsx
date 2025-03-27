@@ -1,14 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Grid, Card, CardContent, CardMedia, Typography, IconButton, Skeleton } from '@mui/material';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { Grid, Card, CardContent, CardMedia, Typography, Skeleton } from '@mui/material';
+// import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import img1 from '../../asserts/Beverage/crusher.webp'
 import img2 from '../../asserts/Beverage/dispenser.jpg'
 import img3 from '../../asserts/Beverage/juicecounter.webp'
 import img4 from '../../asserts/Beverage/smoothie.jpg'
 import img5 from '../../asserts/Beverage/sugercane.webp'
-
-
-
 import imgDiscount from '../../asserts/Kitchen/Electric/discount.webp';
 
 const products = [
