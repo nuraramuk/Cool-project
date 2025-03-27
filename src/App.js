@@ -26,6 +26,7 @@ import Cart from './components/BusinessType/Cart';
 import Showcase from './components/BusinessType/Showcase';
 import Beverage from './components/Onclick/Beverage';
 import CommercialMachines from './components/Onclick/CommercialMachines';
+import BasicSpeedDial from './components/SpeedDial';
 
 function App() {
 
@@ -65,8 +66,9 @@ function App() {
         <Route path='/CommercialMachines' element={<CommercialMachines/>}/>
       </Routes>
       <Footer />
+      <BasicSpeedDial/>
     </BrowserRouter>
-
+  
   );
 }
 export default App;
