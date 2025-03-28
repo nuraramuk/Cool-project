@@ -3,22 +3,152 @@ import { useNavigate } from 'react-router-dom';
 import { Container, Typography, Button, Box, Grid, Card, CardMedia, Snackbar, Alert, IconButton } from '@mui/material';
 import { ArrowBackIosNew, ArrowForwardIos } from '@mui/icons-material';
 
+
 const imageList = [
   { 
     id: 1,
     src: 'images/1.webp', 
     name: 'Automatic Sausage Filling Machine',
     description: 'High-speed automatic sausage filling machine with precision controls.',
-    details: 'High-speed automatic sausage filling machine with precision controls. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    details: 'High-speed automatic sausage filling machine with precision controls.',
+    relatedProducts: [
+      { id: 2, src: 'images/2.webp', name: 'Rotary Rack Oven 32 Trays Diesel / Gas' },
+      { id: 3, src: 'images/3.webp', name: 'Juice Dispenser 16Ltr' },
+      // Add other related products here
+    ]
   },
   { 
     id: 2,
     src: 'images/2.webp', 
     name: 'Rotary Rack Oven 32 Trays Diesel / Gas',
     description: 'Professional rotary rack oven with 32 trays capacity.',
-    details: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+    details: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    relatedProducts: [
+      { id: 1, src: 'images/1.webp', name: 'Automatic Sausage Filling Machine' },
+      { id: 4, src: 'images/4.webp', name: 'Juice Dispenser 16Ltr' },
+      // Add other related products here
+    ]
   },
-  // Add similar details for all other products
+  { 
+    id: 3,
+    src: 'images/3.webp', 
+    name: 'Electric Proofer 16 trays',
+    description: 'Electric proofer with 16 trays capacity.',
+    details: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    relatedProducts: [
+      { id: 1, src: 'images/1.webp', name: 'Automatic Sausage Filling Machine' },
+      { id: 4, src: 'images/4.webp', name: 'Juice Dispenser 16Ltr' },
+      // Add other related products here
+    ]
+  },
+  { 
+    id: 4,
+    src: 'images/4.webp', 
+    name: 'Juice Dispenser 16Ltr',
+    description: 'Juice dispenser with 16Ltr capacity.',
+    details: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    relatedProducts: [
+      { id: 1, src: 'images/1.webp', name: 'Automatic Sausage Filling Machine' },
+      { id: 2, src: 'images/2.webp', name: 'Rotary Rack Oven 32 Trays Diesel / Gas' },
+      // Add other related products here
+    ]
+  },
+  { 
+    id: 5,
+    src: 'images/5.webp', 
+    name: 'Bread Slicer 12mm',
+    description: 'Bread slicer with 12mm thickness.',
+    details: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    relatedProducts: [
+      { id: 1, src: 'images/1.webp', name: 'Automatic Sausage Filling Machine' },
+      { id: 2, src: 'images/2.webp', name: 'Rotary Rack Oven 32 Trays Diesel / Gas' },
+      // Add other related products here
+    ]
+  },
+  { 
+    id: 6,
+    src: 'images/6.webp', 
+    name: 'Popcorn Machine Gas 250g',
+    description: 'Popcorn machine with 250g capacity.',
+    details: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    relatedProducts: [
+      { id: 1, src: 'images/1.webp', name: 'Automatic Sausage Filling Machine' },
+      { id: 2, src: 'images/2.webp', name: 'Rotary Rack Oven 32 Trays Diesel / Gas' },
+      // Add other related products here
+    ]
+  },
+  { 
+    id: 7,
+    src: 'images/juice.webp', 
+    name: 'Juice Dispenser 2 Tank',
+    description: 'Juice dispenser with 2 tanks.',
+    details: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    relatedProducts: [
+      { id: 1, src: 'images/1.webp', name: 'Automatic Sausage Filling Machine' },
+      { id: 2, src: 'images/2.webp', name: 'Rotary Rack Oven 32 Trays Diesel / Gas' },
+      // Add other related products here
+    ]
+  },
+  { 
+    id: 8,
+    src: 'images/Machine.webp', 
+    name: 'Coffee Grinding Machine 10Kgs',
+    description: 'Coffee grinding machine with 10Kgs capacity.',
+    details: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', 
+    relatedProducts: [
+      { id: 1, src: 'images/1.webp', name: 'Automatic Sausage Filling Machine' },
+      { id: 2, src: 'images/2.webp', name: 'Rotary Rack Oven 32 Trays Diesel / Gas' },
+      // Add other related products here
+    ]
+  },
+  { 
+    id: 9,
+    src: 'images/pizza.webp', 
+    name: 'Single Deck Gas Pizza Oven - 2 Trays',
+    description: 'Single deck gas pizza oven with 2 trays capacity.',
+    details: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    relatedProducts: [
+      { id: 1, src: 'images/1.webp', name: 'Automatic Sausage Filling Machine' },
+      { id: 2, src: 'images/2.webp', name: 'Rotary Rack Oven 32 Trays Diesel / Gas' },
+      // Add other related products here
+    ]
+  },
+  { 
+    id: 10,
+    src: 'images/pizza_oven.webp', 
+    name: 'Pizza Oven',
+    description: 'Pizza oven with 2 trays capacity.',
+    details: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    relatedProducts: [
+      { id: 1, src: 'images/1.webp', name: 'Automatic Sausage Filling Machine' },
+      { id: 2, src: 'images/2.webp', name: 'Rotary Rack Oven 32 Trays Diesel / Gas' },
+      // Add other related products here
+    ]
+  },
+  { 
+    id: 11,
+    src: 'images/commercial_microwave_oven_25_litres-300x300.webp', 
+    name: 'Commercial Microwave Oven 25 litres',
+    description: 'Commercial microwave oven with 25 litres capacity.',
+    details: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    relatedProducts: [
+      { id: 1, src: 'images/1.webp', name: 'Automatic Sausage Filling Machine' },
+      { id: 2, src: 'images/2.webp', name: 'Rotary Rack Oven 32 Trays Diesel / Gas' },
+      // Add other related products here
+    ]
+  },
+  { 
+    id: 12,
+    src: 'images/Tandoori.webp', 
+    name: 'Tandoori Oven SS',
+    description: 'Tandoori oven with stainless steel body.',
+    details: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    relatedProducts: [
+      { id: 1, src: 'images/1.webp', name: 'Automatic Sausage Filling Machine' },
+      { id: 2, src: 'images/2.webp', name: 'Rotary Rack Oven 32 Trays Diesel / Gas' },
+      // Add other related products here
+    ]
+  },
 ];
 
 const carouselItems = [
@@ -68,9 +198,13 @@ const LandingPage = ({ searchTerm }) => {
     image.name.toLowerCase().includes(searchTerm.trim().toLowerCase())
   );
 
+  // const handleProductClick = (product) => {
+  //   navigate(`/product/${product.id}`, { state: { product } });
+  // };
   const handleProductClick = (product) => {
-    navigate(`/product/${product.id}`, { state: { product } });
+    navigate(`/product/${product.id}`, { state: { product, relatedProducts: product.relatedProducts } });
   };
+  
 
   const handleAddToCart = (product, e) => {
     e.stopPropagation();
