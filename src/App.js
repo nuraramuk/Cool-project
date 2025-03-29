@@ -28,7 +28,9 @@ import Beverage from './components/Onclick/Beverage';
 import CommercialMachines from './components/Onclick/CommercialMachines';
 import BasicSpeedDial from './components/SpeedDial';
 import ProductDetailPage from './components/Details_page';
-
+import CommercialProducts from './components/Commerical/CommercialProducts';
+import About from './components/About';
+// import ContactPopup from './components/Contact';
 function App() {
 
   const [searchTerm, setSearchTerm] = useState('');
@@ -66,6 +68,9 @@ function App() {
         <Route path='/Beverage' element={<Beverage/>}/>
         <Route path='/CommercialMachines' element={<CommercialMachines/>}/>
         <Route path="/product/:id" element={<ProductDetailPage />} />
+        <Route path='/Commerical_pro' element={<CommercialProducts/>}/>
+        <Route path='/about' element={<About/>}/>
+        {/* <Route path='/contact' element={<ContactPopup/>}/> */}
       </Routes>
       <Footer />
       <BasicSpeedDial/>

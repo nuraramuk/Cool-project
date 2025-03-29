@@ -30,9 +30,9 @@ export default function BasicSpeedDial() {
     zIndex: 10, 
     color: 'orange', 
     '& .MuiFab-primary': {
-      backgroundColor: 'orange', 
+      backgroundColor: '#D76C82', 
       '&:hover': {
-        backgroundColor: 'darkorange', 
+        backgroundColor: '#D76C82', 
       }}
 }}
   icon={<OutdoorGrillIcon sx={{ height: '200px', width: '40px',  }} />}

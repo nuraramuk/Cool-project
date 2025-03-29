@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Grid, Card, CardContent, CardMedia, Typography, IconButton, Skeleton } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
+import {Grid,Card,CardContent,CardMedia,Typography,IconButton,Skeleton,Button,Box,Chip} from '@mui/material';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import img1 from '../../asserts/Bakery/Deep Fryer/633ad2f364c21f45d211ce14-topkitch-electric-deep-fryer-stainless.jpg';
 import img2 from '../../asserts/Bakery/Deep Fryer/images.jpeg';
 import img3 from '../../asserts/Bakery/Deep Fryer/images (1).jpeg';
@@ -13,94 +15,244 @@ const products = [
   {
     name: "Deep Fry",
     imageUrl: img1,
-    description: "",
+    tag: "Efficient",
+    specification: "Material: Stainless Steel, Power: 1800 Watts, Dimensions: 16\" x 14\" x 10\", Voltage: 220V, Frying Capacity: 5 liters of oil",
+    description: "The Deep Fry is a versatile and efficient frying machine made of durable stainless steel. With 1800 watts of power, it can fry up to 5 liters of oil, making it perfect for small to medium-sized kitchens and catering services."
   },
   {
     name: "Electric Deep Fry",
     imageUrl: img2,
-    description: "",
-  
+    tag: "Professional",
+    specification: "Material: Stainless Steel, Power: 2000 Watts, Dimensions: 18\" x 16\" x 12\", Voltage: 220V, Frying Capacity: 10 liters of oil",
+    description: "The Electric Deep Fry is a high-performance fryer, perfect for commercial kitchens. With a 10-liter oil capacity and 2000 watts of power, it delivers fast, even frying, making it ideal for busy restaurants, food trucks, and fast food outlets."
   },
   {
     name: "Mini Electric Deep Fry",
     imageUrl: img3,
-    description: "",
-     
+    tag: "Compact",
+    specification: "Material: Stainless Steel, Power: 1000 Watts, Dimensions: 12\" x 12\" x 8\", Voltage: 220V, Frying Capacity: 3 liters of oil",
+    description: "The Mini Electric Deep Fry is a compact yet powerful fryer suitable for small spaces. With a 3-liter oil capacity and 1000 watts of power, it provides an efficient frying solution for home kitchens or small food stalls."
   },
   {
     name: "Deep Fryer 4ltr Electric Single Tank Indulge",
     imageUrl: img4,
-    description: "",
-     
+    tag: "Efficient",
+    specification: "Material: Stainless Steel, Power: 1500 Watts, Dimensions: 14\" x 14\" x 12\", Voltage: 220V, Frying Capacity: 4 liters of oil",
+    description: "The Deep Fryer 4ltr Electric Single Tank Indulge is designed for efficiency with a 4-liter oil capacity. Powered by 1500 watts, it provides consistent heat for quick frying, making it a great choice for small to medium-sized establishments."
   },
   {
     name: "Deep Fryer 20Ltr Gas Dean",
     imageUrl: img5,
-    description: "",
-     
-  },
+    tag: "Professional",
+    specification: "Material: Stainless Steel, Power: Gas-powered, Dimensions: 24\" x 18\" x 24\", Gas Type: Propane, Frying Capacity: 20 liters of oil",
+    description: "The Deep Fryer 20Ltr Gas Dean is a commercial-grade fryer designed for high-volume frying. It runs on propane gas and can handle up to 20 liters of oil, making it perfect for restaurants, food trucks, and large kitchens that need to cook large quantities of food quickly."
+  }
 ];
 
 function DeepFry() {
   const [loading, setLoading] = useState(true);
+  const [hoveredCard, setHoveredCard] = useState(null);
+  const navigate = useNavigate();
 
-  // Simulate loading state for demonstration
+  const handleViewDetails = (product) => {
+    navigate('/Commerical_pro', { state: { product, category: 'Gas' } });
+  };
+
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false); // Stop loading after 2 seconds
-    }, 1000);
+    const timer = setTimeout(() => setLoading(false), 1000);
+    return () => clearTimeout(timer);
+  }, []);
 
-    return () => clearTimeout(timer); // Cleanup the timer
+  useEffect(() => {
+    window.scrollTo(0, 0);
   }, []);
 
   return (
-    <div style={{ padding: '20px' }}>
-      <Grid container spacing={3} justifyContent="center">
-        <Grid item xs={12} sm={8} md={9}>
-          <Grid container spacing={3} justifyContent="center">
+    <Box sx={{
+      padding: { xs: '15px', sm: '20px', md: '30px' },
+      backgroundColor: '#f9f9f9',
+      minHeight: '100vh'
+    }}>
+      <Typography variant="h5" sx={{
+        textAlign: 'center',
+        mb: 4,
+        fontWeight: 'bold',
+        color: '#333',
+        fontFamily: 'Roboto',
+        position: 'relative',
+        '&:after': {
+          content: '""',
+          display: 'block',
+          width: '80px',
+          height: '4px',
+          backgroundColor: '#FF6B00',
+          margin: '10px auto 0'
+        }
+      }}>
+        Deep Fryer Equipment
+      </Typography>
+
+      <Grid container spacing={3}>
+        <Grid item xs={12} md={9}>
+          <Grid container spacing={3}>
             {products.map((product, index) => (
               <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
                 <Card
+                  onMouseEnter={() => setHoveredCard(index)}
+                  onMouseLeave={() => setHoveredCard(null)}
                   sx={{
+                    height: '100%',
                     display: 'flex',
                     flexDirection: 'column',
-                    justifyContent: 'space-between',
-                    height: '100%',
-                    borderRadius: '15px',
-                    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
-                    transition: 'transform 0.3s ease-in-out',
-                    border: '2px solid #eee',
+                    borderRadius: '12px',
+                    overflow: 'hidden',
+                    boxShadow: '0 5px 15px rgba(0,0,0,0.08)',
+                    transition: 'all 0.3s ease',
+                    position: 'relative',
+                    border: '1px solid #eee',
                     '&:hover': {
-                      transform: 'scale(1.05)',
-                      borderColor: 'orange',
-                    },
+                      transform: 'translateY(-5px)',
+                      boxShadow: '0 10px 25px rgba(0,0,0,0.15)',
+                      borderColor: '#FF6B00'
+                    }
                   }}
                 >
-                  {loading ? (
-                    <Skeleton variant="rectangular" width="100%" height={180} />
-                  ) : (
-                    <CardMedia
-                      component="img"
-                      height="180"
-                      image={product.imageUrl}
-                      alt={product.name}
-                      sx={{ objectFit: 'contain', borderRadius: '15px 15px 0 0' }}
+                  {/* Product Tag */}
+                  {!loading && product.tag && (
+                    <Chip
+                      label={product.tag}
+                      size="small"
+                      sx={{
+                        position: 'absolute',
+                        top: 10,
+                        right: 10,
+                        backgroundColor: '#FF6B00',
+                        color: 'white',
+                        fontWeight: 'bold',
+                        zIndex: 1
+                      }}
                     />
                   )}
-                  <CardContent>
+
+                  {/* Image Section */}
+                  <Box sx={{
+                    position: 'relative',
+                    paddingTop: '75%', // 4:3 aspect ratio
+                    backgroundColor: '#fff'
+                  }}>
+                    {loading ? (
+                      <Skeleton
+                        variant="rectangular"
+                        width="100%"
+                        height="100%"
+                        sx={{ position: 'absolute', top: 0, left: 0 }}
+                      />
+                    ) : (
+                      <>
+                        <CardMedia
+                          component="img"
+                          image={product.imageUrl}
+                          alt={product.name}
+                          sx={{
+                            position: 'absolute',
+                            top: 0,
+                            left: 0,
+                            width: '100%',
+                            height: '100%',
+                            objectFit: 'contain',
+                            padding: '15px',
+                            transition: 'transform 0.3s ease',
+                            transform: hoveredCard === index ? 'scale(1.05)' : 'scale(1)'
+                          }}
+                        />
+                        {/* Quick Actions on Hover */}
+                        {hoveredCard === index && (
+                          <Box sx={{
+                            position: 'absolute',
+                            bottom: 10,
+                            right: 10,
+                            display: 'flex',
+                            gap: 1,
+                            zIndex: 1
+                          }}>
+                            <IconButton sx={{
+                              backgroundColor: 'white',
+                              color: '#FF6B00',
+                              '&:hover': {
+                                backgroundColor: '#FF6B00',
+                                color: 'white'
+                              }
+                            }}>
+                              <FavoriteBorderIcon fontSize="small" />
+                            </IconButton>
+                            <IconButton sx={{
+                              backgroundColor: 'white',
+                              color: '#FF6B00',
+                              '&:hover': {
+                                backgroundColor: '#FF6B00',
+                                color: 'white'
+                              }
+                            }}>
+                              <ShoppingCartIcon fontSize="small" />
+                            </IconButton>
+                          </Box>
+                        )}
+                      </>
+                    )}
+                  </Box>
+
+                  {/* Content Section */}
+                  <CardContent sx={{
+                    flexGrow: 1,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    backgroundColor: 'white',
+                    padding: '16px !important'
+                  }}>
                     {loading ? (
                       <>
-                        <Skeleton variant="text" width="80%" />
-                        <Skeleton variant="text" width="60%" />
+                        <Skeleton variant="text" width="80%" height={24} />
+                        <Skeleton variant="text" width="60%" height={20} />
+                        <Skeleton variant="rectangular" width="100%" height={36} sx={{ mt: 2 }} />
                       </>
                     ) : (
                       <>
-                        <Typography variant="h6" align="center" sx={{fontFamily:'Roboto',fontSize:'16px', fontWeight: 'bold', color: 'orangered' }}>
+                        <Typography
+                          variant="subtitle1"
+                          sx={{
+                            fontWeight: 'bold',
+                            fontFamily: 'Roboto',
+                            WebkitLineClamp: 2,
+                            WebkitBoxOrient: 'vertical',
+                            overflow: 'hidden',  // This hides the overflow
+                            textOverflow: 'ellipsis',  // This adds the ellipsis (...) when the text overflows
+                            whiteSpace: 'nowrap'  // This prevents text wrapping, ensuring it stays in one line
+                          }}
+
+
+                        >
                           {product.name}
                         </Typography>
-                        <Typography variant="h6" align="center" color="primary">
-                          {product.price}
-                        </Typography>
+
+
+                        <Box sx={{ mt: 'auto' }}>
+                          <Button
+                            fullWidth
+                            variant="contained"
+                            onClick={() => handleViewDetails(product)}
+                            sx={{
+                              backgroundColor: '#FF6B00',
+                              color: 'white',
+                              fontWeight: 'bold',
+                              py: 1,
+                              '&:hover': {
+                                backgroundColor: '#E05D00'
+                              }
+                            }}
+                          >
+                            View Details
+                          </Button>
+                        </Box>
                       </>
                     )}
                   </CardContent>
@@ -109,20 +261,73 @@ function DeepFry() {
             ))}
           </Grid>
         </Grid>
-        <Grid item xs={12} sm={4} md={3} sx={{ display: 'flex', justifyContent: 'center' }}>
+
+        {/* Discount Banner Sidebar */}
+        <Grid item xs={12} md={3}>
           {loading ? (
-            <Skeleton variant="rectangular" width="100%" height={300} />
-          ) : (
-            <CardMedia
-              component="img"
-              image={imgDiscount}
-              alt="Discount"
-              sx={{ width: '100%', height: 'auto', borderRadius: '15px' }}
+            <Skeleton
+              variant="rectangular"
+              width="100%"
+              height={400}
+              sx={{ borderRadius: '12px' }}
             />
+          ) : (
+            <Card sx={{
+              height: '100%',
+              borderRadius: '12px',
+              overflow: 'hidden',
+              boxShadow: '0 5px 15px rgba(0,0,0,0.08)',
+              position: 'relative'
+            }}>
+              <CardMedia
+                component="img"
+                image={imgDiscount}
+                alt="Special Discount"
+                sx={{
+                  height: '100%',
+                  objectFit: 'cover',
+                  transition: 'transform 0.5s ease',
+                  '&:hover': {
+                    transform: 'scale(1.03)'
+                  }
+                }}
+              />
+              <Box sx={{
+                position: 'absolute',
+                bottom: 0,
+                left: 0,
+                right: 0,
+                backgroundColor: 'rgba(255, 107, 0, 0.9)',
+                color: 'white',
+                padding: 2,
+                textAlign: 'center'
+              }}>
+                <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
+                  Special Discounts
+                </Typography>
+                <Typography variant="body2" sx={{ mt: 1 }}>
+                  Limited time offers on selected items
+                </Typography>
+                <Button
+                  variant="contained"
+                  sx={{
+                    mt: 2,
+                    backgroundColor: 'white',
+                    color: '#FF6B00',
+                    fontWeight: 'bold',
+                    '&:hover': {
+                      backgroundColor: '#f5f5f5'
+                    }
+                  }}
+                >
+                  Shop Now
+                </Button>
+              </Box>
+            </Card>
           )}
         </Grid>
       </Grid>
-    </div>
+    </Box>
   );
 }
 
