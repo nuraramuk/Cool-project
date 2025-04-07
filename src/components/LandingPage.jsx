@@ -5,7 +5,7 @@ import { ArrowBackIosNew, ArrowForwardIos } from '@mui/icons-material';
 
 const imageList = [
   {
-    id: 1,
+  id: 1,
   src: 'images/cotton-candy-machine.jpg',
   name: 'Cotton Candy Machine',
   tag: 'Best Seller',
@@ -19,37 +19,37 @@ const imageList = [
     suitable_for: 'Fairs, Parties, Festivals, Concessions, Catering',
     additional_features: 'Easy to clean, Fast operation, Lightweight and portable, Safe and user-friendly'
   },
-    // relatedProducts: [
-    //   { 
-    //     id: 2, 
-    //     src: 'images/2.webp', 
-    //     name: 'Rotary Rack Oven 32 Trays Diesel / Gas',
-    //     description: 'A high-capacity rotary rack oven designed for both diesel and gas operation, perfect for large-scale baking needs.',
-    //     specification: {
-    //       material: 'Stainless Steel',
-    //       capacity: '32 trays',
-    //       fuel: 'Diesel / Gas',
-    //       power: '220V electric backup',
-    //       weight: '250 kg',
-    //       dimensions: '200cm x 80cm x 150cm',
-    //       warranty: '3 years'
-    //     }
-    //   },
-    //   { 
-    //     id: 3, 
-    //     src: 'images/3.webp', 
-    //     name: 'Juice Dispenser 16Ltr',
-    //     description: 'A 16-liter juice dispenser perfect for high-volume service, ensuring fresh juice delivery at the right temperature.',
-    //     specification: {
-    //       material: 'Food-grade plastic and stainless steel',
-    //       capacity: '16 liters',
-    //       power: 'Electric 220V',
-    //       weight: '10 kg',
-    //       dimensions: '30cm x 30cm x 60cm',
-    //       warranty: '1 year'
-    //     }
-    //   }
-    // ]
+    relatedProducts: [
+      { 
+        id: 2, 
+        src: 'images/2.webp', 
+        name: 'Rotary Rack Oven 32 Trays Diesel / Gas',
+        description: 'A high-capacity rotary rack oven designed for both diesel and gas operation, perfect for large-scale baking needs.',
+        specification: {
+          material: 'Stainless Steel',
+          capacity: '32 trays',
+          fuel: 'Diesel / Gas',
+          power: '220V electric backup',
+          weight: '250 kg',
+          dimensions: '200cm x 80cm x 150cm',
+          warranty: '3 years'
+        }
+      },
+      { 
+        id: 3, 
+        src: 'images/3.webp', 
+        name: 'Juice Dispenser 16Ltr',
+        description: 'A 16-liter juice dispenser perfect for high-volume service, ensuring fresh juice delivery at the right temperature.',
+        specification: {
+          material: 'Food-grade plastic and stainless steel',
+          capacity: '16 liters',
+          power: 'Electric 220V',
+          weight: '10 kg',
+          dimensions: '30cm x 30cm x 60cm',
+          warranty: '1 year'
+        }
+      }
+    ]
   },
   {
     id: 2,
