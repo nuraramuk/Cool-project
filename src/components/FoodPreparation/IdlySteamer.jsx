@@ -8,6 +8,8 @@ import img2 from '../../asserts/Food/5Rack_Idli.jpg';
 import img3 from '../../asserts/Food/commercial-food-warmer-1641379471-6144719.jpeg';
 import img4 from '../../asserts/Food/download.jpeg';
 import imgDiscount from '../../asserts/Kitchen/Electric/discount.webp';
+import img5 from '../../asserts/Food/Idli6tray.jpeg';
+import img6 from '../../asserts/Food/Idli2.jpeg';
 
 // Sample product data for FoodPreparation
 const products = [
@@ -38,7 +40,31 @@ const products = [
     tag: "Top Rated",
     specification: "Material: Aluminium, Tray Count: 12, Dimensions: 20\" x 16\" x 18\", Capacity: 50 idlis, Power: Manual",
     description: "The Commercial Aluminium Idli Steamer is perfect for preparing large batches of idlis quickly and efficiently. It comes with 12 trays, allowing you to steam up to 50 idlis at once. Made from durable aluminium, it ensures even heat distribution for soft and fluffy idlis, making it ideal for restaurants, hotels, and catering services."
+  },
+  {
+    name: 'Idly Steamer 6 Tray Gas',
+    imageUrl: img5,
+    tag: 'Gas-Powered Steamer',
+    specification: 'Power Source: Gas (LPG), Material: Stainless Steel & Aluminum Tray, Number of Trays: 6, Tray Capacity: 12 Pcs, Tray Dimensions: 14 x 18 x 1.25 Inches, Machine Dimensions (L x D x H): 24″ x 25″ x 35″ Inches, Machine Weight: 35 kg',
+    description: 'The Idly Steamer 6 Tray Gas is a high-capacity, gas-powered kitchen appliance designed for efficient steaming of large batches of food. Ideal for restaurants, catering services, and food businesses, it can accommodate up to 6 trays, allowing you to prepare idlis, dhoklas, momos, and other steamed delicacies. The trays have a capacity of 12 pieces each, and the gas operation ensures consistent and even steaming. Constructed with a stainless steel body and aluminum trays, this steamer is built for durability and easy maintenance. Its compact size and excellent energy efficiency make it the perfect choice for commercial kitchens looking for reliable and fast steaming solutions.'
+  },
+  {
+    name: 'Idly Steamer 8 Tray Gas',
+    imageUrl: img6,
+    tag: 'Gas-Powered Steamer',
+    specification: 'Power Source: Gas (LPG), Material: Stainless Steel & Aluminum Tray, Number of Trays: 8, Tray Capacity: 12 Pcs, Tray Dimensions: 14 x 18 x 1.25 Inches, Machine Dimensions (L x D x H): 24″ x 25″ x 39″ Inches, Machine Weight: 40 kg',
+    description: 'The Idly Steamer 8 Tray Gas is a high-capacity, gas-powered kitchen appliance designed for efficient steaming of large batches of food. Perfect for restaurants, catering services, and food businesses, it accommodates up to 8 trays, allowing you to prepare 12 pieces of idlis, dhoklas, momos, and other steamed delicacies per tray. The gas-powered operation ensures consistent and even steaming, making it an energy-efficient option for high-demand cooking environments. Built with a durable stainless steel body and aluminum trays, it is easy to operate and maintain. With its robust design and excellent performance, this steamer is a reliable choice for commercial kitchens seeking efficient steaming solutions.'
+  },
+  {
+    name: 'Idly Steamer 12 Tray Gas',
+    imageUrl: img5,
+    tag: 'Gas-Powered Steamer',
+    specification: 'Power Source: Gas (LPG), Material: Stainless Steel & Aluminum Tray, Number of Trays: 12, Tray Capacity: 12 Pcs, Tray Dimensions: 14 x 18 x 1.25 Inches, Machine Dimensions (L x D x H): 23.5″ x 24.5″ x 48″ Inches, Machine Weight: 51 kg',
+    description: 'The Idly Steamer 12 Tray Gas is a high-capacity, gas-powered kitchen appliance designed for efficient steaming of large batches of food. Ideal for restaurants, catering services, and food businesses, it accommodates up to 12 trays, allowing you to prepare 12 pieces of idlis, dhoklas, momos, and other steamed delicacies per tray. The gas-powered operation ensures consistent and even steaming, making it an energy-efficient choice for high-demand cooking environments. The stainless steel body and aluminum trays provide durability, and the machine’s easy operation and maintenance make it an excellent option for commercial kitchens. With its robust performance, this steamer is a reliable choice for large-scale food preparation.'
   }
+  
+  
+  
 ]
 
 
