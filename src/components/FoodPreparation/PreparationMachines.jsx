@@ -7,29 +7,30 @@ import img1 from '../../asserts/Food/Machine/Atta.webp';
 import img2 from '../../asserts/Food/Machine/coconut.webp';
 import img3 from '../../asserts/Food/Machine/holwa.jpg';
 import img4 from '../../asserts/Food/Machine/Idiyappam.avif';
-import img5 from '../../asserts/Food/Machine/noodles.jpg';
+import img5 from '../../asserts/Food/Machine/noodle.avif';
 import img6 from '../../asserts/Food/Machine/peeler.webp';
 import img7 from '../../asserts/Food/Machine/sanwich.jpg';
 import img8 from '../../asserts/Food/Machine/uruli.webp';
 import img9 from '../../asserts/Food/Machine/vegcutter.jpg';
 import img10 from '../../asserts/Food/Machine/waffle.png';
+import img11 from '../../asserts/Food/Machine/Flour-Mixing-Machine.png.webp';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 
 // Sample product data for Shawarma
 const products = [
   {
-    name: "Atta Kneader",
+    name: "Atta Kneader / Dough Kneader (10 Kg) SS Premium",
     imageUrl: img1,
-    tag: "Efficient",
-    specification: "Material: Stainless Steel, Capacity: 5 liters, Power: 500 Watts, Dimensions: 12\" x 12\" x 15\"",
-    description: "The Atta Kneader is a high-performance appliance designed for easy and efficient kneading of dough. It can handle up to 5 liters of dough, making it perfect for both small and large batches. Its stainless steel construction ensures durability, while the powerful motor guarantees smooth and consistent kneading."
-  },
+    tag: "Commercial Grade",
+    specification: "Material: Stainless Steel 304, Capacity: 10 kg, Power: 1 HP Copper Motor, Voltage: 220-240 V, Frequency: 50 Hz, Atta Making Speed: 5 mins, Dimensions: 34\" x 34\" x 19\", Weight: 70 kg, Warranty: 1 Year for Motor",
+    description: "The Atta Kneader / Dough Kneader (10 Kg) SS Premium is a commercial-grade kitchen appliance designed for efficiently kneading dough for bread, pizza, pastries, and other baked goods. Featuring a robust 1 HP copper motor, this kneader can process up to 10 kg of dough in just 5 minutes. Its stainless steel 304 bowl ensures durability and hygiene, making it an ideal choice for bakeries and large-scale kitchens. With a weight of 70 kg, it offers stability during operation and comes with a 1-year motor warranty."
+  },  
   {
     name: "Coconut Scrapper",
     imageUrl: img2,
-    tag: "Compact",
-    specification: "Material: Stainless Steel, Power: Manual, Dimensions: 10\" x 8\" x 5\"",
-    description: "The Coconut Scrapper is a compact and efficient tool designed for easily scraping coconut. Its stainless steel blades ensure a clean and quick scraping process, while its small size makes it perfect for tight kitchen spaces. A must-have for those who enjoy cooking with fresh coconut."
+    tag: "Compact & Efficient",
+    specification: "Motor HP: 1/4, Voltage: 230 V AC 50 Hz, Wattage: 180 W, Speed: 1440 RPM, Amps: 0.6 A, Power: Manual, Dimensions: 10\" x 8\" x 5\"",
+    description: "The Coconut Scrapper is a compact and efficient tool designed for easily scraping coconut. Featuring high-quality stainless steel blades, it ensures a clean and quick scraping process, perfect for fresh coconut preparation. The small size of the scrapper makes it ideal for tight kitchen spaces. The tool comes with a heavy-duty motor designed for long-lasting use, and while a burning smell may appear during first-time use (due to the motor varnish heating up), this is normal. Aesthetically designed to enhance the look of your kitchen, this coconut scrapper combines functionality with style."
   },
   {
     name: "Holwa Maker",
@@ -42,51 +43,58 @@ const products = [
     name: "Idiyappam Maker",
     imageUrl: img4,
     tag: "Top Rated",
-    specification: "Material: Stainless Steel, Capacity: 1.5 liters, Power: 400 Watts, Dimensions: 12\" x 12\" x 10\"",
-    description: "The Idiyappam Maker helps prepare soft and delicate rice noodles for your favorite South Indian dishes. Its stainless steel body ensures durability, while its powerful motor delivers consistent results. Ideal for small batches, it's perfect for home kitchens."
-  },
+    specification: "Material: Stainless Steel, Capacity: 2 kg, Power: 400 Watts, Voltage: 220 V/440 V, Production Capacity: 400 plates per hour, Dimensions: 12\" x 12\" x 10\"",
+    description: "The Idiyappam Maker is designed for preparing soft and delicate rice noodles, perfect for your favorite South Indian dishes. Made with durable stainless steel, this automatic tabletop machine boasts a 2 kg capacity and a powerful motor that ensures consistent results. With a production capacity of 400 plates per hour, it's ideal for both home kitchens and small-scale food establishments."
+  },  
   {
     name: "Noodles Maker",
     imageUrl: img5,
     tag: "Modern",
-    specification: "Material: Stainless Steel, Capacity: 1.5 kg of dough, Power: 600 Watts, Dimensions: 14\" x 14\" x 10\"",
-    description: "The Noodles Maker is a modern kitchen appliance that simplifies noodle-making. With a capacity of 1.5 kg of dough and 600 watts of power, it provides quick and efficient results. Its stainless steel construction ensures reliability and ease of cleaning, making it perfect for home kitchens or small restaurants."
-  },
+    specification: "Material: Stainless Steel, Capacity: 1.5 kg of dough, Power: 600 Watts, Dimensions: 14\" x 14\" x 10\", Assembled Product Weight: 13.26 kg, Manufacturer: YINZINR, Color: Red",
+    description: "The Noodles Maker is a modern kitchen appliance designed to simplify noodle-making. With a capacity of 1.5 kg of dough and 600 watts of power, it ensures quick and efficient results. Its stainless steel construction is durable and easy to clean, making it an ideal choice for home kitchens or small restaurants. The machine's compact design and stylish red color add a touch of modernity to any kitchen."
+  },  
   {
     name: "Peeler",
     imageUrl: img6,
     tag: "Professional",
-    specification: "Material: Stainless Steel, Power: Manual, Dimensions: 7\" x 2\" x 1\"",
-    description: "The Peeler is a professional-grade tool designed for quick and effortless peeling of fruits and vegetables. Its stainless steel blades are sharp and durable, ensuring a smooth peeling experience every time. Compact and easy to handle, it's a must-have for any chef or home cook."
-  },
+    specification: "Material: Stainless Steel, Power: Manual, Capacity: 10-30 kg/hr, Brand: MS, Body Material: Stainless Steel, Motor Power: 1 HP, Dimensions: 7\" x 2\" x 1\"",
+    description: "The Peeler is a professional-grade tool designed for quick and effortless peeling of fruits and vegetables. Its stainless steel blades are sharp and durable, ensuring a smooth peeling experience every time. With a capacity of 10-30 kg/hr and a 1 HP motor, this peeler offers high efficiency for both small and medium-scale peeling tasks. Compact, easy to handle, and built to last, it's a must-have for chefs or home cooks who demand professional quality."
+  },  
   {
     name: "Sandwich Maker",
     imageUrl: img7,
     tag: "Efficient",
-    specification: "Material: Stainless Steel, Power: 750 Watts, Dimensions: 10\" x 8\" x 5\"",
-    description: "The Sandwich Maker is designed for quick and easy sandwich preparation. With a 750-watt power rating, it delivers efficient cooking results in no time. The non-stick surface ensures easy cleanup, while the stainless steel body adds durability and style."
-  },
+    specification: "Material: Stainless Steel, Non-Stick Coated Aluminum, Bakelite, Power: 2000 Watts, Dimensions: 18D x 22W x 9H cm, Voltage: 230 Volts, Item Weight: 2.6 kg, Included Components: 1 No. Sandwich Grill, 1 No. Instruction Manual, Style: 4 Slice",
+    description: "The Sandwich Maker is designed for quick and easy sandwich preparation. With a high 2000-watt power rating, it delivers fast and efficient cooking results. The non-stick coating ensures easy cleanup, while the durable stainless steel and Bakelite construction provide both strength and style. This 4-slice sandwich maker is perfect for families and anyone looking to make multiple sandwiches at once. Its sleek design and compact size make it a great addition to any kitchen."
+  },  
   {
     name: "Uruli Roaster",
     imageUrl: img8,
     tag: "Professional",
-    specification: "Material: Cast Iron, Capacity: 3 liters, Dimensions: 14\" x 14\" x 7\"",
-    description: "The Uruli Roaster is a traditional cooking vessel designed for slow roasting and frying. Made from durable cast iron, it retains heat well and ensures even cooking. Perfect for professional kitchens, this roaster is ideal for preparing dishes that require even heat distribution and slow cooking."
-  },
+    specification: "Material: MS or SS, Capacity: 10-60 kg per batch, Power: 1-3 HP, Fuel: LPG, Dimensions: Custom Sizes, Roasting and Drying: Food, Spices, and Ayurvedic Industry",
+    description: "The Uruli Roaster is a traditional yet highly efficient tool designed for roasting powders, spices, pulses, grains, and more. In this equipment, the Uruli (rotating vessel) ensures direct heating of the raw material, while the stationary stirrers keep it evenly mixed. With a capacity of 10-60 kg per batch and a power rating of 1-3 HP, this roaster is fueled by LPG, making it ideal for professional kitchens in the food, spices, and ayurvedic industries. Available in MS or SS, the roaster offers excellent heat retention for consistent and uniform roasting and drying results."
+  },  
   {
     name: "Vegetable Cutter",
     imageUrl: img9,
     tag: "Compact",
-    specification: "Material: Stainless Steel, Power: Manual, Dimensions: 8\" x 6\" x 4\"",
-    description: "The Vegetable Cutter is a compact and efficient tool for cutting vegetables quickly and uniformly. Its stainless steel blades ensure sharpness and durability, making it easy to prepare vegetables for any dish. Ideal for small kitchens, it saves time and effort during meal preparation."
-  },
+    specification: "Material: Stainless Steel, Power: Manual, Dimensions: 25L x 25W x 25H cm, Color: Red, Special Feature: Multipurpose, Operation Mode: Manual",
+    description: "The Vegetable Cutter is a compact and efficient tool designed to quickly and uniformly cut vegetables. Its stainless steel blades ensure sharpness and durability, making vegetable preparation easy for any dish. The red color adds a vibrant touch to your kitchen, while the multipurpose feature allows it to handle a variety of vegetables. Perfect for small kitchens, it saves time and effort during meal preparation."
+  },  
   {
     name: "Waffle Maker",
     imageUrl: img10,
     tag: "Modern",
-    specification: "Material: Stainless Steel, Power: 1000 Watts, Dimensions: 10\" x 8\" x 5\"",
-    description: "The Waffle Maker is a modern kitchen appliance designed to make delicious waffles in minutes. With a 1000-watt power rating and a non-stick cooking surface, it ensures even cooking and easy cleanup. Its sleek stainless steel design adds a contemporary touch to any kitchen."
-  }
+    specification: "Material: Stainless Steel, Power: 1000 Watts, Dimensions: 10\" x 8\" x 5\", Color: Silver, Power Source: Corded Electric, Style: Classic",
+    description: "The Waffle Maker is a modern kitchen appliance designed to make delicious waffles in minutes. With a 1000-watt power rating and a non-stick cooking surface, it ensures even cooking and easy cleanup. Its sleek stainless steel design adds a contemporary touch to any kitchen, while its corded electric operation provides convenience and reliability. Perfect for anyone craving freshly made waffles with minimal effort."
+  },  
+  {
+    name: "Flour Kneader (Atta Kneader) 7 Kg",
+    imageUrl: img11,
+    tag: "Commercial Grade",
+    specification: "Material: Stainless Steel, Capacity: 7 kg, Power: 0.75 HP, Phase: Single, Speed: 100 RPM, Voltage: 220-240 V, Frequency: 50 Hz, Body Sheet: SS Body, Atta Making Speed: 3-5 mins, Drum Size: 14\" x 11\" x 12\", Dimensions: 26\" x 14\" x 12\", Weight: 40 kg, Warranty: 1 Year for Motor",
+    description: "The Flour Kneader (Atta Kneader) 7 Kg is a commercial-grade kitchen appliance built for efficient dough kneading. It can handle up to 7 kg of dough, making it suitable for Roti, Maida, bread, pizza, pastries, and other baked goods. The 0.75 HP motor offers efficient performance, and the 100 RPM speed ensures consistent and smooth kneading. Its stainless steel construction guarantees durability, and the kneader completes the process in just 3-5 minutes. With a 1-year motor warranty, this kneader is a reliable choice for small to medium-scale kitchens."
+  } 
 ]
 
 

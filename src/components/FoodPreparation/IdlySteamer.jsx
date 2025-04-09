@@ -62,9 +62,6 @@ const products = [
     specification: 'Power Source: Gas (LPG), Material: Stainless Steel & Aluminum Tray, Number of Trays: 12, Tray Capacity: 12 Pcs, Tray Dimensions: 14 x 18 x 1.25 Inches, Machine Dimensions (L x D x H): 23.5″ x 24.5″ x 48″ Inches, Machine Weight: 51 kg',
     description: 'The Idly Steamer 12 Tray Gas is a high-capacity, gas-powered kitchen appliance designed for efficient steaming of large batches of food. Ideal for restaurants, catering services, and food businesses, it accommodates up to 12 trays, allowing you to prepare 12 pieces of idlis, dhoklas, momos, and other steamed delicacies per tray. The gas-powered operation ensures consistent and even steaming, making it an energy-efficient choice for high-demand cooking environments. The stainless steel body and aluminum trays provide durability, and the machine’s easy operation and maintenance make it an excellent option for commercial kitchens. With its robust performance, this steamer is a reliable choice for large-scale food preparation.'
   }
-  
-  
-  
 ]
 
 

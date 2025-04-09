@@ -8,6 +8,9 @@ import img2 from '../../asserts/Beverage/dispenser.jpg'
 import img3 from '../../asserts/Beverage/juicecounter.webp'
 import img4 from '../../asserts/Beverage/smoothie.jpg'
 import img5 from '../../asserts/Beverage/sugercane.webp'
+import img6 from '../../asserts/Beverage/Beverage.jpg'
+import img7 from '../../asserts/Beverage/juice1.jpg'
+
 import imgDiscount from '../../asserts/Kitchen/Electric/discount.webp';
 
 const products = [
@@ -45,7 +48,23 @@ const products = [
       tag: "Professional",
       specification: "Material: Stainless Steel, Power: 500 Watts, Dimensions: 18\" x 12\" x 24\", Voltage: 220V, Capacity: 15L",
       description: "The Sugar Cane Maker is a commercial-grade appliance used to extract fresh sugarcane juice. With 500 watts of power and a 15L capacity, it’s perfect for juice bars, restaurants, or street vendors, offering a quick and efficient way to serve fresh sugarcane juice."
-    }
+    },
+    {
+      name: "Commercial Beverage Refrigerator",
+      imageUrl: img6,  // Replace with actual image URL
+      tag: "Reliable & Efficient",
+      specification: "Capacity: Varies (e.g., 500 liters), Power: 220V, Temperature Range: 0°C to 10°C, Body Material: Stainless Steel, Cooling Type: Forced Air, Dimensions: Customizable Sizes, Energy Efficiency: A++ (Varies by model), Door Type: Glass or Solid, Compressor: High-Efficiency Compressor, Warranty: 1-2 Years",
+      description: "The Commercial Beverage Refrigerator is designed to store and display a wide range of beverages at the ideal temperature. Whether it’s cold sodas, chilled juices, or bottles of wine, this unit ensures that all beverages are served at the perfect temperature for optimal taste and freshness. With a sleek stainless steel design, a forced-air cooling system, and adjustable shelving, it provides efficient storage while keeping beverages easily accessible. The energy-efficient compressor ensures low running costs while maintaining consistent temperature control, making it perfect for bars, restaurants, cafes, and convenience stores. With its customizable size and glass or solid door options, this beverage refrigerator is a reliable addition to any commercial setting."
+    },
+    {
+      name: "Commercial Beverage Dispenser",
+      imageUrl: img7,  // Replace with actual image URL
+      tag: "Efficient & Versatile",
+      specification: "Material: Stainless Steel + PC, Colour: Silver, Brand: VEVOR, Capacity: 12 Litres per Tank, Item Weight: 29.9 kg, Cooling Temperature: 45°F-54°F, Power: 370W, Dimensions: Customizable, Suitable for: Cold Drinks, Juice, Iced Tea, Ideal for: Restaurants, Bars, and Parties",
+      description: "The Commercial Beverage Dispenser by VEVOR is a high-quality, durable appliance designed to serve cold beverages with ease. Featuring three 12-litre tanks, this dispenser is perfect for storing and dispensing cold drinks like juice, iced tea, and other refreshing beverages at parties, restaurants, or bars. With a cooling range of 45°F-54°F, it maintains drinks at the perfect temperature to ensure optimal taste. The sleek silver stainless steel and PC construction make it both sturdy and stylish, while its 370W power ensures fast cooling. Easy to use and clean, this beverage dispenser is a must-have for any commercial establishment looking to efficiently serve cold drinks to large groups of people."
+    },    
+
+    
   ];  
 
 function Beverage() {

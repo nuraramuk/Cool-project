@@ -20,13 +20,6 @@ const products = [
     description: "The Electric Handheld Milk Wand Mixer Frother is a portable and efficient tool for frothing milk. With its 200-watt motor, it creates creamy foam quickly and easily, perfect for lattes, cappuccinos, and hot chocolate. Its compact, stainless steel design makes it ideal for home kitchens, offices, and cafes."
   },
   {
-    name: "Dualit Cino Milk Steamer",
-    imageUrl: img2,
-    tag: "Professional",
-    specification: "Material: Stainless Steel, Power: 800 Watts, Dimensions: 10\" x 6\" x 6\", Voltage: 120V",
-    description: "The Dualit Cino Milk Steamer is a professional-grade appliance designed for quick and efficient steaming of milk. With 800 watts of power, it produces rich, velvety foam for a perfect cup of coffee. Its sleek stainless steel design makes it both functional and stylish, ideal for coffee shops or home baristas."
-  },
-  {
     name: "Stainless Steel Silver Electric Automatic Milk Frother and Warmer Steamer",
     imageUrl: img4,
     tag: "Modern",

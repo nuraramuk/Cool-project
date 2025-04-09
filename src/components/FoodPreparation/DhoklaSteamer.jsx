@@ -222,7 +222,6 @@ function DhoklaSteamer() {
                             whiteSpace: 'nowrap'  // This prevents text wrapping, ensuring it stays in one line
                           }}
 
-
                         >
                           {product.name}
                         </Typography>
