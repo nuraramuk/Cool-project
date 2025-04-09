@@ -37,8 +37,9 @@ const ProductDetailPage = () => {
         : [];
 
     const getImagePath = (imgPath) => {
-        if (imgPath.startsWith('http')) return imgPath;
-        return process.env.PUBLIC_URL + '/' + imgPath;
+        // if (imgPath.startsWith('http')) return imgPath;
+        // return process.env.PUBLIC_URL + '/' + imgPath;
+        return imgPath;
     };
 
     const handleAddToCart = () => {

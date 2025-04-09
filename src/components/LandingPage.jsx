@@ -3,10 +3,15 @@ import { useNavigate } from 'react-router-dom';
 import { Container, Typography, Button, Box, Grid, Card, CardMedia, Snackbar, Alert, IconButton } from '@mui/material';
 import { ArrowBackIosNew, ArrowForwardIos } from '@mui/icons-material';
 
+import cotton from '../asserts/RelativeImages/cotton/cotton-candy-machine.jpg'
+import cotton1 from '../asserts/RelativeImages/cotton/bigsize.jpg'
+
+
 const imageList = [
   {
   id: 1,
-  src: 'images/cotton-candy-machine.jpg',
+  src: cotton,
+  // src: 'images/cotton-candy-machine.jpg',
   name: 'Cotton Candy Machine',
   tag: 'Best Seller',
   description: 'The Cotton Candy Machine is a fun and efficient solution for creating delicious cotton candy at events, fairs, and parties. Built with durable materials and designed for ease of use, this machine quickly spins sugar into fluffy, sweet cotton candy in just minutes. Its compact design allows for easy setup and storage, making it perfect for both personal and commercial use. Whether you’re looking to serve kids at a birthday party or attract crowds at a food festival, this cotton candy machine is a must-have for any occasion.',
@@ -22,7 +27,8 @@ const imageList = [
     relatedProducts: [
       { 
         id: 2, 
-        src: 'images/2.webp', 
+        // src: '../asserts/RelativeImages/cotton/bigsize.jpg', 
+        src: cotton1, 
         name: 'Rotary Rack Oven 32 Trays Diesel / Gas',
         description: 'A high-capacity rotary rack oven designed for both diesel and gas operation, perfect for large-scale baking needs.',
         specification: {
@@ -37,6 +43,34 @@ const imageList = [
       },
       { 
         id: 3, 
+        src: 'images/3.webp', 
+        name: 'Juice Dispenser 16Ltr',
+        description: 'A 16-liter juice dispenser perfect for high-volume service, ensuring fresh juice delivery at the right temperature.',
+        specification: {
+          material: 'Food-grade plastic and stainless steel',
+          capacity: '16 liters',
+          power: 'Electric 220V',
+          weight: '10 kg',
+          dimensions: '30cm x 30cm x 60cm',
+          warranty: '1 year'
+        }
+      },
+      { 
+        id: 4, 
+        src: 'images/3.webp', 
+        name: 'Juice Dispenser 16Ltr',
+        description: 'A 16-liter juice dispenser perfect for high-volume service, ensuring fresh juice delivery at the right temperature.',
+        specification: {
+          material: 'Food-grade plastic and stainless steel',
+          capacity: '16 liters',
+          power: 'Electric 220V',
+          weight: '10 kg',
+          dimensions: '30cm x 30cm x 60cm',
+          warranty: '1 year'
+        }
+      },
+      { 
+        id: 5, 
         src: 'images/3.webp', 
         name: 'Juice Dispenser 16Ltr',
         description: 'A 16-liter juice dispenser perfect for high-volume service, ensuring fresh juice delivery at the right temperature.',
