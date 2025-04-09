@@ -148,7 +148,7 @@ const ProductDetailPage = () => {
                             display: 'flex',
                             justifyContent: 'center',
                             alignItems: 'center',
-                            backgroundColor: '#D4C9BE',
+                            // backgroundColor: '#D4C9BE',
                             p: 2
                         }}>
                             <CardMedia
@@ -166,26 +166,32 @@ const ProductDetailPage = () => {
                                 }}
                             />
                         </Box>
-                        <CardContent sx={{ p: 2 }}>
-                            <Typography variant="subtitle1" sx={{
-                                fontWeight: 'bold',
-                                whiteSpace: 'nowrap',
-                                overflow: 'hidden',
-                                textOverflow: 'ellipsis',
-                                mb: 1,
-                                color: '#333'
-                            }}>
-                                {item.name}
-                            </Typography>
-                            {item.price && (
-                                <Typography variant="h6" sx={{
-                                    fontWeight: 'bold',
-                                    color: '#FF6B00'
-                                }}>
-                                    ₹{item.price}
-                                </Typography>
-                            )}
-                        </CardContent>
+                        
+              <CardContent sx={{ p: 2 }}>
+    <Typography 
+        variant="subtitle1" 
+        sx={{
+            fontWeight: 'bold',
+            fontFamily: 'Roboto',
+            WebkitLineClamp: 2,
+            WebkitBoxOrient: 'vertical',
+            overflow: 'hidden',  // This hides the overflow
+            textOverflow: 'ellipsis',  // This adds the ellipsis (...) when the text overflows
+            whiteSpace: 'nowrap'  // This prevents text wrapping, ensuring it stays in one line
+        }}>
+        {item.name}
+    </Typography>
+    {item.price && (
+        <Typography variant="h6" sx={{
+            fontWeight: 'bold',
+            color: '#FF6B00'
+        }}>
+            ₹{item.price}
+        </Typography>
+    )}
+</CardContent>
+
+
                     </Card>
                 ))}
             </Box>

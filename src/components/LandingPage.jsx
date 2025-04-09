@@ -3,9 +3,18 @@ import { useNavigate } from 'react-router-dom';
 import { Container, Typography, Button, Box, Grid, Card, CardMedia, Snackbar, Alert, IconButton } from '@mui/material';
 import { ArrowBackIosNew, ArrowForwardIos } from '@mui/icons-material';
 
+//cotton candy
 import cotton from '../asserts/RelativeImages/cotton/cotton-candy-machine.jpg'
-import cotton1 from '../asserts/RelativeImages/cotton/bigsize.jpg'
-
+import cotton1 from '../asserts/RelativeImages/cotton/fullAuto.webp'
+import cotton2 from '../asserts/RelativeImages/cotton/bigsize.jpg'
+import cotton3 from '../asserts/RelativeImages/cotton/manual-cotton-candy.webp'
+import cotton4 from '../asserts/RelativeImages/cotton/smallsize.webp'
+//Food Cart
+import cart from '../asserts/RelativeImages/FoodCart/food.webp'
+import cart1 from '../asserts/RelativeImages/FoodCart/pop.webp'
+import cart2 from '../asserts/RelativeImages/FoodCart/cotton.webp'
+import cart3 from '../asserts/RelativeImages/FoodCart/poptrolly.webp'
+import cart4 from '../asserts/RelativeImages/FoodCart/corn.webp'
 
 const imageList = [
   {
@@ -29,65 +38,68 @@ const imageList = [
         id: 2, 
         // src: '../asserts/RelativeImages/cotton/bigsize.jpg', 
         src: cotton1, 
-        name: 'Rotary Rack Oven 32 Trays Diesel / Gas',
-        description: 'A high-capacity rotary rack oven designed for both diesel and gas operation, perfect for large-scale baking needs.',
-        specification: {
-          material: 'Stainless Steel',
-          capacity: '32 trays',
-          fuel: 'Diesel / Gas',
-          power: '220V electric backup',
-          weight: '250 kg',
-          dimensions: '200cm x 80cm x 150cm',
-          warranty: '3 years'
+  name: 'Electric Cotton Candy Machine', 
+  description: 'The Electric Cotton Candy Machine made the joy of fluffy, sugary treats accessible to many, bringing a bit of carnival fun into everyday life. Whether for business or pleasure, they offer a unique way to enjoy a classic sweet treat.',
+  specification: {
+    voltage: '220V/110V',
+    power: '1080W',
+    output: '1 Unit/30 S',
+    pan_diameter: '520mm',
+    size: '520x520x500mm',
+    material_of_pan: 'S/S (Stainless Steel)',
+    packing_item: 'Carton + Foam',
+    packing_size: '570x570x450mm',
+    transport_package: 'Carton + Foam',
+    // warranty: '1 Year Manufacturing Defect'
         }
       },
       { 
         id: 3, 
-        src: 'images/3.webp', 
-        name: 'Juice Dispenser 16Ltr',
-        description: 'A 16-liter juice dispenser perfect for high-volume service, ensuring fresh juice delivery at the right temperature.',
+        src: cotton2, 
+        name: 'Full Automation Cotton Candy',
+        description: 'A fully automated cotton candy machine designed for high-volume production, ensuring consistent and fluffy cotton candy with minimal effort.',
         specification: {
-          material: 'Food-grade plastic and stainless steel',
-          capacity: '16 liters',
+          material: 'Food-grade stainless steel, non-stick coating, and durable plastic components',
+          capacity: 'Produces up to 100 cotton candies per hour',
           power: 'Electric 220V',
-          weight: '10 kg',
-          dimensions: '30cm x 30cm x 60cm',
-          warranty: '1 year'
+          weight: '12 kg',
+          dimensions: '45cm x 45cm x 60cm',
+          // warranty: '3 year'
         }
       },
       { 
         id: 4, 
-        src: 'images/3.webp', 
-        name: 'Juice Dispenser 16Ltr',
-        description: 'A 16-liter juice dispenser perfect for high-volume service, ensuring fresh juice delivery at the right temperature.',
+        src: cotton3, 
+        name: 'Manual Control Cotton Candy',
+        description: 'A manual cotton candy machine designed for hands-on control, allowing users to create custom cotton candy with precision and creativity.',
         specification: {
-          material: 'Food-grade plastic and stainless steel',
-          capacity: '16 liters',
+          material: 'Food-grade stainless steel, non-stick coating, and durable plastic components',
+          capacity: 'Produces up to 50 cotton candies per hour',
           power: 'Electric 220V',
-          weight: '10 kg',
-          dimensions: '30cm x 30cm x 60cm',
-          warranty: '1 year'
+          weight: '8 kg',
+          // dimensions: '30cm x 30cm x 60cm',
+          // warranty: '1 year'
         }
       },
       { 
         id: 5, 
-        src: 'images/3.webp', 
-        name: 'Juice Dispenser 16Ltr',
-        description: 'A 16-liter juice dispenser perfect for high-volume service, ensuring fresh juice delivery at the right temperature.',
+        src: cotton4, 
+        name: 'Small Size Cotton Candy',
+        description: 'A compact cotton candy machine ideal for small events, home use, or low-volume production, offering an easy and fun way to make cotton candy.',
         specification: {
-          material: 'Food-grade plastic and stainless steel',
-          capacity: '16 liters',
-          power: 'Electric 220V',
-          weight: '10 kg',
-          dimensions: '30cm x 30cm x 60cm',
-          warranty: '1 year'
+          material: 'Food-grade stainless steel and durable plastic',
+          capacity: 'Produces up to 30 cotton candies per hour',
+          power: 'Electric 110V',
+          weight: '5 kg',
+          // dimensions: '30cm x 30cm x 60cm',
+          // warranty: '1 year'
         }
       }
     ]
   },
   {
     id: 2,
-    src: "images/food.webp",
+    src: cart,
     name: "Food Cart",
     tag: "Popular",
     description: "The Food Cart is an essential mobile solution for street food vendors and small restaurants. Made from high-quality stainless steel, it offers a robust and durable structure, ensuring reliability in all conditions. With ample space and a 300 kg weight capacity, it is designed to carry all the necessary cooking equipment, ingredients, and supplies. The four-wheel design guarantees effortless mobility, making it easy to transport and set up wherever needed. Whether you're operating in a bustling street market or at a local event, this food cart provides a practical and efficient solution for food service.",
@@ -99,13 +111,67 @@ const imageList = [
       suitable_for: 'Street food vendors, Small restaurants',
       additional_features: 'Durable and easy to clean, Mobile and stable, Ample workspace for food preparation, Ideal for outdoor use'
     },
-    // relatedProducts: [
-    //   { id: 1, src: 'images/1.webp', name: 'Automatic Sausage Filling Machine' },
-    //   { id: 4, src: 'images/4.webp', name: 'Juice Dispenser 16Ltr' },
-    //   { id: 1, src: 'images/1.webp', name: 'Automatic Sausage Filling Machine' },
-    //   { id: 4, src: 'images/4.webp', name: 'Juice Dispenser 16Ltr' },
-    //   // Add other related products here
-    // ]
+    relatedProducts: [
+      { 
+        id: 3, 
+        src: cart1, 
+  name: 'Popcorn Cart Trolley', 
+  description: 'The Popcorn Machine 250 Gms Electric Black With Cart Trolley is a compact, countertop model designed for small-scale commercial use. It can produce 200-250 grams per batch and 7-9 kg per hour of delicious, freshly popped popcorn. Ideal for food stalls, events, and small cafes, this machine provides an efficient and fun way to serve popcorn to customers.',
+  specification: {
+   
+      material: 'Mild Steel with Aluminium Frame',
+      capacity: '250 gms per batch',
+      power: 'Electric 220V',
+      weight: '32 kg',
+      dimensions: '45cm x 45cm x 60cm',
+      // warranty: '3 year'
+    
+        }
+      },
+      { 
+        id: 4, 
+        src: cart2, 
+        name: 'Candy Floss Machine',
+        description: 'The Electric Cotton Candy Machine with Cart brings the joy of fluffy, sugary treats to your business or home, making carnival fun accessible for everyone. This machine provides a fast and easy way to enjoy a classic sweet treat, whether for business or pleasure.',
+        specification: {
+          material: 'MS (Mild Steel) pan',
+          capacity: 'Produces up to 100 cotton candies per hour',
+          power: 'Electric 220V',
+          weight: '12 kg',
+          dimensions: '45cm x 45cm x 60cm',
+          // warranty: '3 year'
+        }
+      },
+      { 
+        id: 5, 
+        src: cart3, 
+        name: 'ACart Trolley',
+        description: 'A mobile and stylish solution for preparing and serving popcorn in various settings such as fairs, events, cinemas, and malls. It combines the functionality of a popcorn machine with the convenience of a cart, making it easy to move and set up in different locations. The trolleys attractive design draws customer attention, making it a popular choice for businesses and entertainment venues.',
+        specification: {
+          material: 'Steel frame with durable powder coating and high-quality glass panels',
+          capacity: 'Electric 110V or 230V depending on model',
+          dimensions: "Varies based on the model, generally around 120 cm x 80 cm x 180 cm", 
+        use: "Fairs, events, cinemas, malls, and more", 
+          weight: '8 kg',
+          // dimensions: '30cm x 30cm x 60cm',
+          // warranty: '1 year'
+        }
+      },
+      { 
+        id: 6, 
+        src: cart4, 
+        name: 'Electric Sweetcorn Trolly',
+        description: 'A specialized machine for efficiently steaming or cooking sweetcorn in commercial settings such as food stalls, markets, events, and catering operations. This machine is designed to ensure high-quality corn in large volumes, perfect for any high-demand food service.',
+        specification: {
+          material: 'Stainless Steel',
+          capacity: '5 kg corn / 10L water',
+          power: 'Electric 230V, 3000W',
+          weight: '32 kg',
+          use:'Commercial Cafes, Hotels, Events & More'
+          // warranty: '1 year'
+        }
+      }
+    ]
   },
   {
     id: 3,
