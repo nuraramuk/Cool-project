@@ -43,11 +43,11 @@ const ProductDetailPage = () => {
     };
 
     const handleAddToCart = () => {
-        navigate('/cart');
+        // navigate('/cart');
     };
 
     const handleBuyNow = () => {
-        navigate('/checkout');
+        // navigate('/checkout');
     };
 
     const handleProductClick = (clickedProduct) => {
